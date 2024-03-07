@@ -1,0 +1,1488 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/laurenceadams/.nvm/versions/node/v5.12.0/bin/node',
+1 verbose cli   '/Users/laurenceadams/.nvm/versions/node/v5.12.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   '@nestjs/cli' ]
+2 info using npm@3.8.6
+3 info using node@v5.12.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData @nestjs/cli
+8 silly fetchNamedPackageData @nestjs/cli
+9 silly mapToRegistry name @nestjs/cli
+10 silly mapToRegistry scope (from package name) @nestjs
+11 verbose mapToRegistry no registry URL found in name for scope @nestjs
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry http://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: '@nestjs/cli',
+14 silly mapToRegistry   scope: '@nestjs',
+14 silly mapToRegistry   name: '@nestjs/cli',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri http://registry.npmjs.org/@nestjs%2fcli
+16 verbose request uri http://registry.npmjs.org/@nestjs%2fcli
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 9:51:38 AM
+19 verbose request id dcae9124568483fc
+20 http request GET http://registry.npmjs.org/@nestjs%2fcli
+21 http 200 http://registry.npmjs.org/@nestjs%2fcli
+22 verbose headers { date: 'Thu, 07 Mar 2024 14:51:39 GMT',
+22 verbose headers   'content-type': 'application/json',
+22 verbose headers   'transfer-encoding': 'chunked',
+22 verbose headers   connection: 'close',
+22 verbose headers   'cf-ray': '860b67a14c6e67ea-MIA',
+22 verbose headers   'cf-cache-status': 'REVALIDATED',
+22 verbose headers   'access-control-allow-origin': '*',
+22 verbose headers   'cache-control': 'public, max-age=300',
+22 verbose headers   etag: 'W/"a52c725f9ab08c7e95cee22c698abc5f"',
+22 verbose headers   'last-modified': 'Wed, 07 Feb 2024 10:19:16 GMT',
+22 verbose headers   vary: 'accept-encoding, accept',
+22 verbose headers   server: 'cloudflare',
+22 verbose headers   'content-encoding': 'gzip' }
+23 silly get cb [ 200,
+23 silly get   { date: 'Thu, 07 Mar 2024 14:51:39 GMT',
+23 silly get     'content-type': 'application/json',
+23 silly get     'transfer-encoding': 'chunked',
+23 silly get     connection: 'close',
+23 silly get     'cf-ray': '860b67a14c6e67ea-MIA',
+23 silly get     'cf-cache-status': 'REVALIDATED',
+23 silly get     'access-control-allow-origin': '*',
+23 silly get     'cache-control': 'public, max-age=300',
+23 silly get     etag: 'W/"a52c725f9ab08c7e95cee22c698abc5f"',
+23 silly get     'last-modified': 'Wed, 07 Feb 2024 10:19:16 GMT',
+23 silly get     vary: 'accept-encoding, accept',
+23 silly get     server: 'cloudflare',
+23 silly get     'content-encoding': 'gzip' } ]
+24 verbose get saving @nestjs/cli to /Users/laurenceadams/.npm/registry.npmjs.org/_40nestjs_252fcli/.cache.json
+25 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule @nestjs/cli@10.3.2 checking installable status
+39 silly cache add args [ '@nestjs/cli', null ]
+40 verbose cache add spec @nestjs/cli
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: '@nestjs/cli',
+41 silly cache add   scope: '@nestjs',
+41 silly cache add   name: '@nestjs/cli',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed @nestjs/cli@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for @nestjs/cli
+44 info addNameTag [ '@nestjs/cli', 'latest' ]
+45 silly mapToRegistry name @nestjs/cli
+46 silly mapToRegistry scope (from package name) @nestjs
+47 verbose mapToRegistry no registry URL found in name for scope @nestjs
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry http://registry.npmjs.org/
+50 silly mapToRegistry data Result {
+50 silly mapToRegistry   raw: '@nestjs/cli',
+50 silly mapToRegistry   scope: '@nestjs',
+50 silly mapToRegistry   name: '@nestjs/cli',
+50 silly mapToRegistry   rawSpec: '',
+50 silly mapToRegistry   spec: 'latest',
+50 silly mapToRegistry   type: 'tag' }
+51 silly mapToRegistry uri http://registry.npmjs.org/@nestjs%2fcli
+52 verbose addNameTag registry:http://registry.npmjs.org/@nestjs%2fcli not in flight; fetching
+53 verbose get http://registry.npmjs.org/@nestjs%2fcli not expired, no request
+54 silly addNameTag next cb for @nestjs/cli with tag latest
+55 silly addNamed @nestjs/cli@10.3.2
+56 verbose addNamed "10.3.2" is a plain semver version for @nestjs/cli
+57 silly mapToRegistry name @nestjs/cli
+58 silly mapToRegistry scope (from package name) @nestjs
+59 verbose mapToRegistry no registry URL found in name for scope @nestjs
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry http://registry.npmjs.org/
+62 silly mapToRegistry data Result {
+62 silly mapToRegistry   raw: '@nestjs/cli',
+62 silly mapToRegistry   scope: '@nestjs',
+62 silly mapToRegistry   name: '@nestjs/cli',
+62 silly mapToRegistry   rawSpec: '',
+62 silly mapToRegistry   spec: 'latest',
+62 silly mapToRegistry   type: 'tag' }
+63 silly mapToRegistry uri http://registry.npmjs.org/@nestjs%2fcli
+64 verbose addRemoteTarball http://registry.npmjs.org/@nestjs/cli/-/cli-10.3.2.tgz not in flight; adding
+65 verbose addRemoteTarball [ 'http://registry.npmjs.org/@nestjs/cli/-/cli-10.3.2.tgz',
+65 verbose addRemoteTarball   '42d2764ead6633e278c55d42de871b4cc1db002b' ]
+66 info retry fetch attempt 1 at 9:51:40 AM
+67 info attempt registry request try #1 at 9:51:40 AM
+68 http fetch GET http://registry.npmjs.org/@nestjs/cli/-/cli-10.3.2.tgz
+69 http fetch 200 http://registry.npmjs.org/@nestjs/cli/-/cli-10.3.2.tgz
+70 silly fetchAndShaCheck shasum 42d2764ead6633e278c55d42de871b4cc1db002b
+71 verbose addTmpTarball /var/folders/4q/nk9k0m5s1vs5fyrh6cr6nnpw0000gn/T/npm-22038-d75c8a2f/registry.npmjs.org/_40nestjs/cli/-/cli-10.3.2.tgz not in flight; adding
+72 verbose addTmpTarball already have metadata; skipping unpack for @nestjs/cli@10.3.2
+73 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+74 silly cache afterAdd @nestjs/cli@10.3.2
+75 verbose afterAdd /Users/laurenceadams/.npm/@nestjs/cli/10.3.2/package/package.json not in flight; writing
+76 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+77 verbose afterAdd /Users/laurenceadams/.npm/@nestjs/cli/10.3.2/package/package.json written
+78 silly fetchNamedPackageData @angular-devkit/core
+79 silly mapToRegistry name @angular-devkit/core
+80 silly mapToRegistry scope (from package name) @angular-devkit
+81 verbose mapToRegistry no registry URL found in name for scope @angular-devkit
+82 silly mapToRegistry using default registry
+83 silly mapToRegistry registry http://registry.npmjs.org/
+84 silly mapToRegistry data Result {
+84 silly mapToRegistry   raw: '@angular-devkit/core',
+84 silly mapToRegistry   scope: '@angular-devkit',
+84 silly mapToRegistry   name: '@angular-devkit/core',
+84 silly mapToRegistry   rawSpec: '',
+84 silly mapToRegistry   spec: 'latest',
+84 silly mapToRegistry   type: 'tag' }
+85 silly mapToRegistry uri http://registry.npmjs.org/@angular-devkit%2fcore
+86 silly fetchNamedPackageData @angular-devkit/schematics
+87 silly mapToRegistry name @angular-devkit/schematics
+88 silly mapToRegistry scope (from package name) @angular-devkit
+89 verbose mapToRegistry no registry URL found in name for scope @angular-devkit
+90 silly mapToRegistry using default registry
+91 silly mapToRegistry registry http://registry.npmjs.org/
+92 silly mapToRegistry data Result {
+92 silly mapToRegistry   raw: '@angular-devkit/schematics',
+92 silly mapToRegistry   scope: '@angular-devkit',
+92 silly mapToRegistry   name: '@angular-devkit/schematics',
+92 silly mapToRegistry   rawSpec: '',
+92 silly mapToRegistry   spec: 'latest',
+92 silly mapToRegistry   type: 'tag' }
+93 silly mapToRegistry uri http://registry.npmjs.org/@angular-devkit%2fschematics
+94 silly fetchNamedPackageData @angular-devkit/schematics-cli
+95 silly mapToRegistry name @angular-devkit/schematics-cli
+96 silly mapToRegistry scope (from package name) @angular-devkit
+97 verbose mapToRegistry no registry URL found in name for scope @angular-devkit
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry http://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: '@angular-devkit/schematics-cli',
+100 silly mapToRegistry   scope: '@angular-devkit',
+100 silly mapToRegistry   name: '@angular-devkit/schematics-cli',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri http://registry.npmjs.org/@angular-devkit%2fschematics-cli
+102 silly fetchNamedPackageData @nestjs/schematics
+103 silly mapToRegistry name @nestjs/schematics
+104 silly mapToRegistry scope (from package name) @nestjs
+105 verbose mapToRegistry no registry URL found in name for scope @nestjs
+106 silly mapToRegistry using default registry
+107 silly mapToRegistry registry http://registry.npmjs.org/
+108 silly mapToRegistry data Result {
+108 silly mapToRegistry   raw: '@nestjs/schematics',
+108 silly mapToRegistry   scope: '@nestjs',
+108 silly mapToRegistry   name: '@nestjs/schematics',
+108 silly mapToRegistry   rawSpec: '',
+108 silly mapToRegistry   spec: 'latest',
+108 silly mapToRegistry   type: 'tag' }
+109 silly mapToRegistry uri http://registry.npmjs.org/@nestjs%2fschematics
+110 silly fetchNamedPackageData chalk
+111 silly mapToRegistry name chalk
+112 silly mapToRegistry using default registry
+113 silly mapToRegistry registry http://registry.npmjs.org/
+114 silly mapToRegistry data Result {
+114 silly mapToRegistry   raw: 'chalk',
+114 silly mapToRegistry   scope: null,
+114 silly mapToRegistry   name: 'chalk',
+114 silly mapToRegistry   rawSpec: '',
+114 silly mapToRegistry   spec: 'latest',
+114 silly mapToRegistry   type: 'tag' }
+115 silly mapToRegistry uri http://registry.npmjs.org/chalk
+116 silly fetchNamedPackageData chokidar
+117 silly mapToRegistry name chokidar
+118 silly mapToRegistry using default registry
+119 silly mapToRegistry registry http://registry.npmjs.org/
+120 silly mapToRegistry data Result {
+120 silly mapToRegistry   raw: 'chokidar',
+120 silly mapToRegistry   scope: null,
+120 silly mapToRegistry   name: 'chokidar',
+120 silly mapToRegistry   rawSpec: '',
+120 silly mapToRegistry   spec: 'latest',
+120 silly mapToRegistry   type: 'tag' }
+121 silly mapToRegistry uri http://registry.npmjs.org/chokidar
+122 silly fetchNamedPackageData cli-table3
+123 silly mapToRegistry name cli-table3
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry http://registry.npmjs.org/
+126 silly mapToRegistry data Result {
+126 silly mapToRegistry   raw: 'cli-table3',
+126 silly mapToRegistry   scope: null,
+126 silly mapToRegistry   name: 'cli-table3',
+126 silly mapToRegistry   rawSpec: '',
+126 silly mapToRegistry   spec: 'latest',
+126 silly mapToRegistry   type: 'tag' }
+127 silly mapToRegistry uri http://registry.npmjs.org/cli-table3
+128 silly fetchNamedPackageData commander
+129 silly mapToRegistry name commander
+130 silly mapToRegistry using default registry
+131 silly mapToRegistry registry http://registry.npmjs.org/
+132 silly mapToRegistry data Result {
+132 silly mapToRegistry   raw: 'commander',
+132 silly mapToRegistry   scope: null,
+132 silly mapToRegistry   name: 'commander',
+132 silly mapToRegistry   rawSpec: '',
+132 silly mapToRegistry   spec: 'latest',
+132 silly mapToRegistry   type: 'tag' }
+133 silly mapToRegistry uri http://registry.npmjs.org/commander
+134 silly fetchNamedPackageData fork-ts-checker-webpack-plugin
+135 silly mapToRegistry name fork-ts-checker-webpack-plugin
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry http://registry.npmjs.org/
+138 silly mapToRegistry data Result {
+138 silly mapToRegistry   raw: 'fork-ts-checker-webpack-plugin',
+138 silly mapToRegistry   scope: null,
+138 silly mapToRegistry   name: 'fork-ts-checker-webpack-plugin',
+138 silly mapToRegistry   rawSpec: '',
+138 silly mapToRegistry   spec: 'latest',
+138 silly mapToRegistry   type: 'tag' }
+139 silly mapToRegistry uri http://registry.npmjs.org/fork-ts-checker-webpack-plugin
+140 silly fetchNamedPackageData glob
+141 silly mapToRegistry name glob
+142 silly mapToRegistry using default registry
+143 silly mapToRegistry registry http://registry.npmjs.org/
+144 silly mapToRegistry data Result {
+144 silly mapToRegistry   raw: 'glob',
+144 silly mapToRegistry   scope: null,
+144 silly mapToRegistry   name: 'glob',
+144 silly mapToRegistry   rawSpec: '',
+144 silly mapToRegistry   spec: 'latest',
+144 silly mapToRegistry   type: 'tag' }
+145 silly mapToRegistry uri http://registry.npmjs.org/glob
+146 silly fetchNamedPackageData inquirer
+147 silly mapToRegistry name inquirer
+148 silly mapToRegistry using default registry
+149 silly mapToRegistry registry http://registry.npmjs.org/
+150 silly mapToRegistry data Result {
+150 silly mapToRegistry   raw: 'inquirer',
+150 silly mapToRegistry   scope: null,
+150 silly mapToRegistry   name: 'inquirer',
+150 silly mapToRegistry   rawSpec: '',
+150 silly mapToRegistry   spec: 'latest',
+150 silly mapToRegistry   type: 'tag' }
+151 silly mapToRegistry uri http://registry.npmjs.org/inquirer
+152 silly fetchNamedPackageData node-emoji
+153 silly mapToRegistry name node-emoji
+154 silly mapToRegistry using default registry
+155 silly mapToRegistry registry http://registry.npmjs.org/
+156 silly mapToRegistry data Result {
+156 silly mapToRegistry   raw: 'node-emoji',
+156 silly mapToRegistry   scope: null,
+156 silly mapToRegistry   name: 'node-emoji',
+156 silly mapToRegistry   rawSpec: '',
+156 silly mapToRegistry   spec: 'latest',
+156 silly mapToRegistry   type: 'tag' }
+157 silly mapToRegistry uri http://registry.npmjs.org/node-emoji
+158 silly fetchNamedPackageData ora
+159 silly mapToRegistry name ora
+160 silly mapToRegistry using default registry
+161 silly mapToRegistry registry http://registry.npmjs.org/
+162 silly mapToRegistry data Result {
+162 silly mapToRegistry   raw: 'ora',
+162 silly mapToRegistry   scope: null,
+162 silly mapToRegistry   name: 'ora',
+162 silly mapToRegistry   rawSpec: '',
+162 silly mapToRegistry   spec: 'latest',
+162 silly mapToRegistry   type: 'tag' }
+163 silly mapToRegistry uri http://registry.npmjs.org/ora
+164 silly fetchNamedPackageData rimraf
+165 silly mapToRegistry name rimraf
+166 silly mapToRegistry using default registry
+167 silly mapToRegistry registry http://registry.npmjs.org/
+168 silly mapToRegistry data Result {
+168 silly mapToRegistry   raw: 'rimraf',
+168 silly mapToRegistry   scope: null,
+168 silly mapToRegistry   name: 'rimraf',
+168 silly mapToRegistry   rawSpec: '',
+168 silly mapToRegistry   spec: 'latest',
+168 silly mapToRegistry   type: 'tag' }
+169 silly mapToRegistry uri http://registry.npmjs.org/rimraf
+170 silly fetchNamedPackageData shelljs
+171 silly mapToRegistry name shelljs
+172 silly mapToRegistry using default registry
+173 silly mapToRegistry registry http://registry.npmjs.org/
+174 silly mapToRegistry data Result {
+174 silly mapToRegistry   raw: 'shelljs',
+174 silly mapToRegistry   scope: null,
+174 silly mapToRegistry   name: 'shelljs',
+174 silly mapToRegistry   rawSpec: '',
+174 silly mapToRegistry   spec: 'latest',
+174 silly mapToRegistry   type: 'tag' }
+175 silly mapToRegistry uri http://registry.npmjs.org/shelljs
+176 silly fetchNamedPackageData source-map-support
+177 silly mapToRegistry name source-map-support
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry http://registry.npmjs.org/
+180 silly mapToRegistry data Result {
+180 silly mapToRegistry   raw: 'source-map-support',
+180 silly mapToRegistry   scope: null,
+180 silly mapToRegistry   name: 'source-map-support',
+180 silly mapToRegistry   rawSpec: '',
+180 silly mapToRegistry   spec: 'latest',
+180 silly mapToRegistry   type: 'tag' }
+181 silly mapToRegistry uri http://registry.npmjs.org/source-map-support
+182 silly fetchNamedPackageData tree-kill
+183 silly mapToRegistry name tree-kill
+184 silly mapToRegistry using default registry
+185 silly mapToRegistry registry http://registry.npmjs.org/
+186 silly mapToRegistry data Result {
+186 silly mapToRegistry   raw: 'tree-kill',
+186 silly mapToRegistry   scope: null,
+186 silly mapToRegistry   name: 'tree-kill',
+186 silly mapToRegistry   rawSpec: '',
+186 silly mapToRegistry   spec: 'latest',
+186 silly mapToRegistry   type: 'tag' }
+187 silly mapToRegistry uri http://registry.npmjs.org/tree-kill
+188 silly fetchNamedPackageData tsconfig-paths
+189 silly mapToRegistry name tsconfig-paths
+190 silly mapToRegistry using default registry
+191 silly mapToRegistry registry http://registry.npmjs.org/
+192 silly mapToRegistry data Result {
+192 silly mapToRegistry   raw: 'tsconfig-paths',
+192 silly mapToRegistry   scope: null,
+192 silly mapToRegistry   name: 'tsconfig-paths',
+192 silly mapToRegistry   rawSpec: '',
+192 silly mapToRegistry   spec: 'latest',
+192 silly mapToRegistry   type: 'tag' }
+193 silly mapToRegistry uri http://registry.npmjs.org/tsconfig-paths
+194 silly fetchNamedPackageData tsconfig-paths-webpack-plugin
+195 silly mapToRegistry name tsconfig-paths-webpack-plugin
+196 silly mapToRegistry using default registry
+197 silly mapToRegistry registry http://registry.npmjs.org/
+198 silly mapToRegistry data Result {
+198 silly mapToRegistry   raw: 'tsconfig-paths-webpack-plugin',
+198 silly mapToRegistry   scope: null,
+198 silly mapToRegistry   name: 'tsconfig-paths-webpack-plugin',
+198 silly mapToRegistry   rawSpec: '',
+198 silly mapToRegistry   spec: 'latest',
+198 silly mapToRegistry   type: 'tag' }
+199 silly mapToRegistry uri http://registry.npmjs.org/tsconfig-paths-webpack-plugin
+200 silly fetchNamedPackageData typescript
+201 silly mapToRegistry name typescript
+202 silly mapToRegistry using default registry
+203 silly mapToRegistry registry http://registry.npmjs.org/
+204 silly mapToRegistry data Result {
+204 silly mapToRegistry   raw: 'typescript',
+204 silly mapToRegistry   scope: null,
+204 silly mapToRegistry   name: 'typescript',
+204 silly mapToRegistry   rawSpec: '',
+204 silly mapToRegistry   spec: 'latest',
+204 silly mapToRegistry   type: 'tag' }
+205 silly mapToRegistry uri http://registry.npmjs.org/typescript
+206 silly fetchNamedPackageData webpack
+207 silly mapToRegistry name webpack
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry http://registry.npmjs.org/
+210 silly mapToRegistry data Result {
+210 silly mapToRegistry   raw: 'webpack',
+210 silly mapToRegistry   scope: null,
+210 silly mapToRegistry   name: 'webpack',
+210 silly mapToRegistry   rawSpec: '',
+210 silly mapToRegistry   spec: 'latest',
+210 silly mapToRegistry   type: 'tag' }
+211 silly mapToRegistry uri http://registry.npmjs.org/webpack
+212 silly fetchNamedPackageData webpack-node-externals
+213 silly mapToRegistry name webpack-node-externals
+214 silly mapToRegistry using default registry
+215 silly mapToRegistry registry http://registry.npmjs.org/
+216 silly mapToRegistry data Result {
+216 silly mapToRegistry   raw: 'webpack-node-externals',
+216 silly mapToRegistry   scope: null,
+216 silly mapToRegistry   name: 'webpack-node-externals',
+216 silly mapToRegistry   rawSpec: '',
+216 silly mapToRegistry   spec: 'latest',
+216 silly mapToRegistry   type: 'tag' }
+217 silly mapToRegistry uri http://registry.npmjs.org/webpack-node-externals
+218 verbose request uri http://registry.npmjs.org/@angular-devkit%2fcore
+219 verbose request no auth needed
+220 info attempt registry request try #1 at 9:51:41 AM
+221 http request GET http://registry.npmjs.org/@angular-devkit%2fcore
+222 verbose request uri http://registry.npmjs.org/@angular-devkit%2fschematics
+223 verbose request no auth needed
+224 info attempt registry request try #1 at 9:51:41 AM
+225 http request GET http://registry.npmjs.org/@angular-devkit%2fschematics
+226 verbose request uri http://registry.npmjs.org/@angular-devkit%2fschematics-cli
+227 verbose request no auth needed
+228 info attempt registry request try #1 at 9:51:41 AM
+229 http request GET http://registry.npmjs.org/@angular-devkit%2fschematics-cli
+230 verbose request uri http://registry.npmjs.org/@nestjs%2fschematics
+231 verbose request no auth needed
+232 info attempt registry request try #1 at 9:51:41 AM
+233 http request GET http://registry.npmjs.org/@nestjs%2fschematics
+234 verbose request uri http://registry.npmjs.org/chokidar
+235 verbose request no auth needed
+236 info attempt registry request try #1 at 9:51:41 AM
+237 http request GET http://registry.npmjs.org/chokidar
+238 verbose request uri http://registry.npmjs.org/cli-table3
+239 verbose request no auth needed
+240 info attempt registry request try #1 at 9:51:41 AM
+241 http request GET http://registry.npmjs.org/cli-table3
+242 verbose request uri http://registry.npmjs.org/commander
+243 verbose request no auth needed
+244 info attempt registry request try #1 at 9:51:41 AM
+245 http request GET http://registry.npmjs.org/commander
+246 verbose request uri http://registry.npmjs.org/fork-ts-checker-webpack-plugin
+247 verbose request no auth needed
+248 info attempt registry request try #1 at 9:51:41 AM
+249 http request GET http://registry.npmjs.org/fork-ts-checker-webpack-plugin
+250 verbose request uri http://registry.npmjs.org/glob
+251 verbose request no auth needed
+252 info attempt registry request try #1 at 9:51:41 AM
+253 http request GET http://registry.npmjs.org/glob
+254 verbose request uri http://registry.npmjs.org/inquirer
+255 verbose request no auth needed
+256 info attempt registry request try #1 at 9:51:41 AM
+257 http request GET http://registry.npmjs.org/inquirer
+258 verbose request uri http://registry.npmjs.org/node-emoji
+259 verbose request no auth needed
+260 info attempt registry request try #1 at 9:51:41 AM
+261 http request GET http://registry.npmjs.org/node-emoji
+262 verbose request uri http://registry.npmjs.org/ora
+263 verbose request no auth needed
+264 info attempt registry request try #1 at 9:51:41 AM
+265 http request GET http://registry.npmjs.org/ora
+266 verbose request uri http://registry.npmjs.org/rimraf
+267 verbose request no auth needed
+268 info attempt registry request try #1 at 9:51:41 AM
+269 http request GET http://registry.npmjs.org/rimraf
+270 verbose request uri http://registry.npmjs.org/shelljs
+271 verbose request no auth needed
+272 info attempt registry request try #1 at 9:51:41 AM
+273 http request GET http://registry.npmjs.org/shelljs
+274 verbose request uri http://registry.npmjs.org/source-map-support
+275 verbose request no auth needed
+276 info attempt registry request try #1 at 9:51:41 AM
+277 http request GET http://registry.npmjs.org/source-map-support
+278 verbose request uri http://registry.npmjs.org/tree-kill
+279 verbose request no auth needed
+280 info attempt registry request try #1 at 9:51:41 AM
+281 http request GET http://registry.npmjs.org/tree-kill
+282 verbose request uri http://registry.npmjs.org/tsconfig-paths
+283 verbose request no auth needed
+284 info attempt registry request try #1 at 9:51:41 AM
+285 http request GET http://registry.npmjs.org/tsconfig-paths
+286 verbose request uri http://registry.npmjs.org/tsconfig-paths-webpack-plugin
+287 verbose request no auth needed
+288 info attempt registry request try #1 at 9:51:41 AM
+289 http request GET http://registry.npmjs.org/tsconfig-paths-webpack-plugin
+290 verbose request uri http://registry.npmjs.org/webpack
+291 verbose request no auth needed
+292 info attempt registry request try #1 at 9:51:41 AM
+293 http request GET http://registry.npmjs.org/webpack
+294 verbose request uri http://registry.npmjs.org/webpack-node-externals
+295 verbose request no auth needed
+296 info attempt registry request try #1 at 9:51:41 AM
+297 http request GET http://registry.npmjs.org/webpack-node-externals
+298 verbose request uri http://registry.npmjs.org/chalk
+299 verbose request no auth needed
+300 info attempt registry request try #1 at 9:51:41 AM
+301 verbose etag W/"26314151095197e98634d4bd46c38556"
+302 verbose lastModified Thu, 08 Feb 2024 00:07:21 GMT
+303 http request GET http://registry.npmjs.org/chalk
+304 verbose request uri http://registry.npmjs.org/typescript
+305 verbose request no auth needed
+306 info attempt registry request try #1 at 9:51:41 AM
+307 verbose etag W/"51ce06698eab5f278be310e29d0db99c"
+308 verbose lastModified Thu, 07 Mar 2024 07:10:00 GMT
+309 http request GET http://registry.npmjs.org/typescript
+310 http 304 http://registry.npmjs.org/chalk
+311 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+311 verbose headers   connection: 'close',
+311 verbose headers   'cf-ray': '860b67b2fead961a-MIA',
+311 verbose headers   'cf-cache-status': 'HIT',
+311 verbose headers   age: '253',
+311 verbose headers   'cache-control': 'public, max-age=300',
+311 verbose headers   etag: '"26314151095197e98634d4bd46c38556"',
+311 verbose headers   'last-modified': 'Thu, 08 Feb 2024 00:07:21 GMT',
+311 verbose headers   vary: 'Accept-Encoding',
+311 verbose headers   server: 'cloudflare' }
+312 silly get cb [ 304,
+312 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+312 silly get     connection: 'close',
+312 silly get     'cf-ray': '860b67b2fead961a-MIA',
+312 silly get     'cf-cache-status': 'HIT',
+312 silly get     age: '253',
+312 silly get     'cache-control': 'public, max-age=300',
+312 silly get     etag: '"26314151095197e98634d4bd46c38556"',
+312 silly get     'last-modified': 'Thu, 08 Feb 2024 00:07:21 GMT',
+312 silly get     vary: 'Accept-Encoding',
+312 silly get     server: 'cloudflare' } ]
+313 verbose etag http://registry.npmjs.org/chalk from cache
+314 verbose get saving chalk to /Users/laurenceadams/.npm/registry.npmjs.org/chalk/.cache.json
+315 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+316 http 304 http://registry.npmjs.org/typescript
+317 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+317 verbose headers   connection: 'close',
+317 verbose headers   'cf-ray': '860b67b31e418dde-MIA',
+317 verbose headers   'cf-cache-status': 'HIT',
+317 verbose headers   age: '60',
+317 verbose headers   'cache-control': 'public, max-age=300',
+317 verbose headers   etag: '"51ce06698eab5f278be310e29d0db99c"',
+317 verbose headers   'last-modified': 'Thu, 07 Mar 2024 07:10:00 GMT',
+317 verbose headers   vary: 'Accept-Encoding',
+317 verbose headers   server: 'cloudflare' }
+318 silly get cb [ 304,
+318 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+318 silly get     connection: 'close',
+318 silly get     'cf-ray': '860b67b31e418dde-MIA',
+318 silly get     'cf-cache-status': 'HIT',
+318 silly get     age: '60',
+318 silly get     'cache-control': 'public, max-age=300',
+318 silly get     etag: '"51ce06698eab5f278be310e29d0db99c"',
+318 silly get     'last-modified': 'Thu, 07 Mar 2024 07:10:00 GMT',
+318 silly get     vary: 'Accept-Encoding',
+318 silly get     server: 'cloudflare' } ]
+319 verbose etag http://registry.npmjs.org/typescript from cache
+320 verbose get saving typescript to /Users/laurenceadams/.npm/registry.npmjs.org/typescript/.cache.json
+321 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+322 http 200 http://registry.npmjs.org/cli-table3
+323 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+323 verbose headers   'content-type': 'application/json',
+323 verbose headers   'transfer-encoding': 'chunked',
+323 verbose headers   connection: 'close',
+323 verbose headers   'cf-ray': '860b67b2e8726dd4-MIA',
+323 verbose headers   'cf-cache-status': 'HIT',
+323 verbose headers   'access-control-allow-origin': '*',
+323 verbose headers   age: '233',
+323 verbose headers   'cache-control': 'public, max-age=300',
+323 verbose headers   etag: 'W/"48288bade476921a4b5caf142d2a5e17"',
+323 verbose headers   'last-modified': 'Thu, 15 Sep 2022 19:20:42 GMT',
+323 verbose headers   vary: 'accept-encoding, accept',
+323 verbose headers   server: 'cloudflare',
+323 verbose headers   'content-encoding': 'gzip' }
+324 silly get cb [ 200,
+324 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+324 silly get     'content-type': 'application/json',
+324 silly get     'transfer-encoding': 'chunked',
+324 silly get     connection: 'close',
+324 silly get     'cf-ray': '860b67b2e8726dd4-MIA',
+324 silly get     'cf-cache-status': 'HIT',
+324 silly get     'access-control-allow-origin': '*',
+324 silly get     age: '233',
+324 silly get     'cache-control': 'public, max-age=300',
+324 silly get     etag: 'W/"48288bade476921a4b5caf142d2a5e17"',
+324 silly get     'last-modified': 'Thu, 15 Sep 2022 19:20:42 GMT',
+324 silly get     vary: 'accept-encoding, accept',
+324 silly get     server: 'cloudflare',
+324 silly get     'content-encoding': 'gzip' } ]
+325 verbose get saving cli-table3 to /Users/laurenceadams/.npm/registry.npmjs.org/cli-table3/.cache.json
+326 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+327 http 200 http://registry.npmjs.org/tree-kill
+328 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+328 verbose headers   'content-type': 'application/json',
+328 verbose headers   'transfer-encoding': 'chunked',
+328 verbose headers   connection: 'close',
+328 verbose headers   'cf-ray': '860b67b2fbda7497-MIA',
+328 verbose headers   'cf-cache-status': 'HIT',
+328 verbose headers   'access-control-allow-origin': '*',
+328 verbose headers   age: '95',
+328 verbose headers   'cache-control': 'public, max-age=300',
+328 verbose headers   etag: 'W/"801f16ed2d95baf794a86f8f0c31f071"',
+328 verbose headers   'last-modified': 'Mon, 27 Jun 2022 20:50:12 GMT',
+328 verbose headers   vary: 'accept-encoding, accept',
+328 verbose headers   server: 'cloudflare',
+328 verbose headers   'content-encoding': 'gzip' }
+329 silly get cb [ 200,
+329 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+329 silly get     'content-type': 'application/json',
+329 silly get     'transfer-encoding': 'chunked',
+329 silly get     connection: 'close',
+329 silly get     'cf-ray': '860b67b2fbda7497-MIA',
+329 silly get     'cf-cache-status': 'HIT',
+329 silly get     'access-control-allow-origin': '*',
+329 silly get     age: '95',
+329 silly get     'cache-control': 'public, max-age=300',
+329 silly get     etag: 'W/"801f16ed2d95baf794a86f8f0c31f071"',
+329 silly get     'last-modified': 'Mon, 27 Jun 2022 20:50:12 GMT',
+329 silly get     vary: 'accept-encoding, accept',
+329 silly get     server: 'cloudflare',
+329 silly get     'content-encoding': 'gzip' } ]
+330 verbose get saving tree-kill to /Users/laurenceadams/.npm/registry.npmjs.org/tree-kill/.cache.json
+331 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+332 http 200 http://registry.npmjs.org/webpack-node-externals
+333 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+333 verbose headers   'content-type': 'application/json',
+333 verbose headers   'transfer-encoding': 'chunked',
+333 verbose headers   connection: 'close',
+333 verbose headers   'cf-ray': '860b67b2ff2cda47-MIA',
+333 verbose headers   'cf-cache-status': 'HIT',
+333 verbose headers   'access-control-allow-origin': '*',
+333 verbose headers   age: '12',
+333 verbose headers   'cache-control': 'public, max-age=300',
+333 verbose headers   etag: 'W/"30c467bdc147a1facdd7eb88c4112491"',
+333 verbose headers   'last-modified': 'Wed, 29 Jun 2022 00:00:26 GMT',
+333 verbose headers   vary: 'accept-encoding, accept',
+333 verbose headers   server: 'cloudflare',
+333 verbose headers   'content-encoding': 'gzip' }
+334 silly get cb [ 200,
+334 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+334 silly get     'content-type': 'application/json',
+334 silly get     'transfer-encoding': 'chunked',
+334 silly get     connection: 'close',
+334 silly get     'cf-ray': '860b67b2ff2cda47-MIA',
+334 silly get     'cf-cache-status': 'HIT',
+334 silly get     'access-control-allow-origin': '*',
+334 silly get     age: '12',
+334 silly get     'cache-control': 'public, max-age=300',
+334 silly get     etag: 'W/"30c467bdc147a1facdd7eb88c4112491"',
+334 silly get     'last-modified': 'Wed, 29 Jun 2022 00:00:26 GMT',
+334 silly get     vary: 'accept-encoding, accept',
+334 silly get     server: 'cloudflare',
+334 silly get     'content-encoding': 'gzip' } ]
+335 verbose get saving webpack-node-externals to /Users/laurenceadams/.npm/registry.npmjs.org/webpack-node-externals/.cache.json
+336 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+337 silly resolveWithNewModule chalk@4.1.2 checking installable status
+338 silly cache add args [ 'chalk@4.1.2', null ]
+339 verbose cache add spec chalk@4.1.2
+340 silly cache add parsed spec Result {
+340 silly cache add   raw: 'chalk@4.1.2',
+340 silly cache add   scope: null,
+340 silly cache add   name: 'chalk',
+340 silly cache add   rawSpec: '4.1.2',
+340 silly cache add   spec: '4.1.2',
+340 silly cache add   type: 'version' }
+341 silly addNamed chalk@4.1.2
+342 verbose addNamed "4.1.2" is a plain semver version for chalk
+343 silly mapToRegistry name chalk
+344 silly mapToRegistry using default registry
+345 silly mapToRegistry registry http://registry.npmjs.org/
+346 silly mapToRegistry data Result {
+346 silly mapToRegistry   raw: 'chalk',
+346 silly mapToRegistry   scope: null,
+346 silly mapToRegistry   name: 'chalk',
+346 silly mapToRegistry   rawSpec: '',
+346 silly mapToRegistry   spec: 'latest',
+346 silly mapToRegistry   type: 'tag' }
+347 silly mapToRegistry uri http://registry.npmjs.org/chalk
+348 verbose addNameVersion registry:http://registry.npmjs.org/chalk not in flight; fetching
+349 http 200 http://registry.npmjs.org/ora
+350 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+350 verbose headers   'content-type': 'application/json',
+350 verbose headers   'transfer-encoding': 'chunked',
+350 verbose headers   connection: 'close',
+350 verbose headers   'cf-ray': '860b67b2eb030341-MIA',
+350 verbose headers   'cf-cache-status': 'HIT',
+350 verbose headers   'access-control-allow-origin': '*',
+350 verbose headers   age: '222',
+350 verbose headers   'cache-control': 'public, max-age=300',
+350 verbose headers   etag: 'W/"46a6fe95c1458ff2bec0a90e23714f13"',
+350 verbose headers   'last-modified': 'Sat, 23 Dec 2023 11:38:34 GMT',
+350 verbose headers   vary: 'accept-encoding, accept',
+350 verbose headers   server: 'cloudflare',
+350 verbose headers   'content-encoding': 'gzip' }
+351 silly get cb [ 200,
+351 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+351 silly get     'content-type': 'application/json',
+351 silly get     'transfer-encoding': 'chunked',
+351 silly get     connection: 'close',
+351 silly get     'cf-ray': '860b67b2eb030341-MIA',
+351 silly get     'cf-cache-status': 'HIT',
+351 silly get     'access-control-allow-origin': '*',
+351 silly get     age: '222',
+351 silly get     'cache-control': 'public, max-age=300',
+351 silly get     etag: 'W/"46a6fe95c1458ff2bec0a90e23714f13"',
+351 silly get     'last-modified': 'Sat, 23 Dec 2023 11:38:34 GMT',
+351 silly get     vary: 'accept-encoding, accept',
+351 silly get     server: 'cloudflare',
+351 silly get     'content-encoding': 'gzip' } ]
+352 verbose get saving ora to /Users/laurenceadams/.npm/registry.npmjs.org/ora/.cache.json
+353 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+354 http 200 http://registry.npmjs.org/source-map-support
+355 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+355 verbose headers   'content-type': 'application/json',
+355 verbose headers   'transfer-encoding': 'chunked',
+355 verbose headers   connection: 'close',
+355 verbose headers   'cf-ray': '860b67b2ffe7b3e0-MIA',
+355 verbose headers   'cf-cache-status': 'HIT',
+355 verbose headers   'access-control-allow-origin': '*',
+355 verbose headers   age: '73',
+355 verbose headers   'cache-control': 'public, max-age=300',
+355 verbose headers   etag: 'W/"81df9b290f6745b51154e834d5d19315"',
+355 verbose headers   'last-modified': 'Fri, 09 Jun 2023 21:51:01 GMT',
+355 verbose headers   vary: 'accept-encoding, accept',
+355 verbose headers   server: 'cloudflare',
+355 verbose headers   'content-encoding': 'gzip' }
+356 silly get cb [ 200,
+356 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+356 silly get     'content-type': 'application/json',
+356 silly get     'transfer-encoding': 'chunked',
+356 silly get     connection: 'close',
+356 silly get     'cf-ray': '860b67b2ffe7b3e0-MIA',
+356 silly get     'cf-cache-status': 'HIT',
+356 silly get     'access-control-allow-origin': '*',
+356 silly get     age: '73',
+356 silly get     'cache-control': 'public, max-age=300',
+356 silly get     etag: 'W/"81df9b290f6745b51154e834d5d19315"',
+356 silly get     'last-modified': 'Fri, 09 Jun 2023 21:51:01 GMT',
+356 silly get     vary: 'accept-encoding, accept',
+356 silly get     server: 'cloudflare',
+356 silly get     'content-encoding': 'gzip' } ]
+357 verbose get saving source-map-support to /Users/laurenceadams/.npm/registry.npmjs.org/source-map-support/.cache.json
+358 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+359 silly resolveWithNewModule typescript@5.3.3 checking installable status
+360 silly cache add args [ 'typescript@5.3.3', null ]
+361 verbose cache add spec typescript@5.3.3
+362 silly cache add parsed spec Result {
+362 silly cache add   raw: 'typescript@5.3.3',
+362 silly cache add   scope: null,
+362 silly cache add   name: 'typescript',
+362 silly cache add   rawSpec: '5.3.3',
+362 silly cache add   spec: '5.3.3',
+362 silly cache add   type: 'version' }
+363 silly addNamed typescript@5.3.3
+364 verbose addNamed "5.3.3" is a plain semver version for typescript
+365 silly mapToRegistry name typescript
+366 silly mapToRegistry using default registry
+367 silly mapToRegistry registry http://registry.npmjs.org/
+368 silly mapToRegistry data Result {
+368 silly mapToRegistry   raw: 'typescript',
+368 silly mapToRegistry   scope: null,
+368 silly mapToRegistry   name: 'typescript',
+368 silly mapToRegistry   rawSpec: '',
+368 silly mapToRegistry   spec: 'latest',
+368 silly mapToRegistry   type: 'tag' }
+369 silly mapToRegistry uri http://registry.npmjs.org/typescript
+370 verbose addNameVersion registry:http://registry.npmjs.org/typescript not in flight; fetching
+371 http 200 http://registry.npmjs.org/rimraf
+372 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+372 verbose headers   'content-type': 'application/json',
+372 verbose headers   'transfer-encoding': 'chunked',
+372 verbose headers   connection: 'close',
+372 verbose headers   'cf-ray': '860b67b2e94e4982-MIA',
+372 verbose headers   'cf-cache-status': 'HIT',
+372 verbose headers   'access-control-allow-origin': '*',
+372 verbose headers   age: '255',
+372 verbose headers   'cache-control': 'public, max-age=300',
+372 verbose headers   etag: 'W/"5f44b5ae3f8bf38a35ab31e7fd6fc03b"',
+372 verbose headers   'last-modified': 'Tue, 07 Nov 2023 05:01:43 GMT',
+372 verbose headers   vary: 'accept-encoding, accept',
+372 verbose headers   server: 'cloudflare',
+372 verbose headers   'content-encoding': 'gzip' }
+373 silly get cb [ 200,
+373 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+373 silly get     'content-type': 'application/json',
+373 silly get     'transfer-encoding': 'chunked',
+373 silly get     connection: 'close',
+373 silly get     'cf-ray': '860b67b2e94e4982-MIA',
+373 silly get     'cf-cache-status': 'HIT',
+373 silly get     'access-control-allow-origin': '*',
+373 silly get     age: '255',
+373 silly get     'cache-control': 'public, max-age=300',
+373 silly get     etag: 'W/"5f44b5ae3f8bf38a35ab31e7fd6fc03b"',
+373 silly get     'last-modified': 'Tue, 07 Nov 2023 05:01:43 GMT',
+373 silly get     vary: 'accept-encoding, accept',
+373 silly get     server: 'cloudflare',
+373 silly get     'content-encoding': 'gzip' } ]
+374 verbose get saving rimraf to /Users/laurenceadams/.npm/registry.npmjs.org/rimraf/.cache.json
+375 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+376 verbose get http://registry.npmjs.org/chalk not expired, no request
+377 silly resolveWithNewModule cli-table3@0.6.3 checking installable status
+378 silly cache add args [ 'cli-table3@0.6.3', null ]
+379 verbose cache add spec cli-table3@0.6.3
+380 silly cache add parsed spec Result {
+380 silly cache add   raw: 'cli-table3@0.6.3',
+380 silly cache add   scope: null,
+380 silly cache add   name: 'cli-table3',
+380 silly cache add   rawSpec: '0.6.3',
+380 silly cache add   spec: '0.6.3',
+380 silly cache add   type: 'version' }
+381 silly addNamed cli-table3@0.6.3
+382 verbose addNamed "0.6.3" is a plain semver version for cli-table3
+383 silly mapToRegistry name cli-table3
+384 silly mapToRegistry using default registry
+385 silly mapToRegistry registry http://registry.npmjs.org/
+386 silly mapToRegistry data Result {
+386 silly mapToRegistry   raw: 'cli-table3',
+386 silly mapToRegistry   scope: null,
+386 silly mapToRegistry   name: 'cli-table3',
+386 silly mapToRegistry   rawSpec: '',
+386 silly mapToRegistry   spec: 'latest',
+386 silly mapToRegistry   type: 'tag' }
+387 silly mapToRegistry uri http://registry.npmjs.org/cli-table3
+388 verbose addNameVersion registry:http://registry.npmjs.org/cli-table3 not in flight; fetching
+389 silly resolveWithNewModule tree-kill@1.2.2 checking installable status
+390 silly cache add args [ 'tree-kill@1.2.2', null ]
+391 verbose cache add spec tree-kill@1.2.2
+392 silly cache add parsed spec Result {
+392 silly cache add   raw: 'tree-kill@1.2.2',
+392 silly cache add   scope: null,
+392 silly cache add   name: 'tree-kill',
+392 silly cache add   rawSpec: '1.2.2',
+392 silly cache add   spec: '1.2.2',
+392 silly cache add   type: 'version' }
+393 silly addNamed tree-kill@1.2.2
+394 verbose addNamed "1.2.2" is a plain semver version for tree-kill
+395 silly mapToRegistry name tree-kill
+396 silly mapToRegistry using default registry
+397 silly mapToRegistry registry http://registry.npmjs.org/
+398 silly mapToRegistry data Result {
+398 silly mapToRegistry   raw: 'tree-kill',
+398 silly mapToRegistry   scope: null,
+398 silly mapToRegistry   name: 'tree-kill',
+398 silly mapToRegistry   rawSpec: '',
+398 silly mapToRegistry   spec: 'latest',
+398 silly mapToRegistry   type: 'tag' }
+399 silly mapToRegistry uri http://registry.npmjs.org/tree-kill
+400 verbose addNameVersion registry:http://registry.npmjs.org/tree-kill not in flight; fetching
+401 silly resolveWithNewModule webpack-node-externals@3.0.0 checking installable status
+402 silly cache add args [ 'webpack-node-externals@3.0.0', null ]
+403 verbose cache add spec webpack-node-externals@3.0.0
+404 silly cache add parsed spec Result {
+404 silly cache add   raw: 'webpack-node-externals@3.0.0',
+404 silly cache add   scope: null,
+404 silly cache add   name: 'webpack-node-externals',
+404 silly cache add   rawSpec: '3.0.0',
+404 silly cache add   spec: '3.0.0',
+404 silly cache add   type: 'version' }
+405 silly addNamed webpack-node-externals@3.0.0
+406 verbose addNamed "3.0.0" is a plain semver version for webpack-node-externals
+407 silly mapToRegistry name webpack-node-externals
+408 silly mapToRegistry using default registry
+409 silly mapToRegistry registry http://registry.npmjs.org/
+410 silly mapToRegistry data Result {
+410 silly mapToRegistry   raw: 'webpack-node-externals',
+410 silly mapToRegistry   scope: null,
+410 silly mapToRegistry   name: 'webpack-node-externals',
+410 silly mapToRegistry   rawSpec: '',
+410 silly mapToRegistry   spec: 'latest',
+410 silly mapToRegistry   type: 'tag' }
+411 silly mapToRegistry uri http://registry.npmjs.org/webpack-node-externals
+412 verbose addNameVersion registry:http://registry.npmjs.org/webpack-node-externals not in flight; fetching
+413 http 200 http://registry.npmjs.org/node-emoji
+414 verbose headers { date: 'Thu, 07 Mar 2024 14:51:42 GMT',
+414 verbose headers   'content-type': 'application/json',
+414 verbose headers   'transfer-encoding': 'chunked',
+414 verbose headers   connection: 'close',
+414 verbose headers   'cf-ray': '860b67b2f86fb3bb-MIA',
+414 verbose headers   'cf-cache-status': 'REVALIDATED',
+414 verbose headers   'access-control-allow-origin': '*',
+414 verbose headers   'cache-control': 'public, max-age=300',
+414 verbose headers   etag: 'W/"f4f9685dcf344f07137f30e42f6274a7"',
+414 verbose headers   'last-modified': 'Fri, 19 Jan 2024 09:26:02 GMT',
+414 verbose headers   vary: 'accept-encoding, accept',
+414 verbose headers   server: 'cloudflare',
+414 verbose headers   'content-encoding': 'gzip' }
+415 silly get cb [ 200,
+415 silly get   { date: 'Thu, 07 Mar 2024 14:51:42 GMT',
+415 silly get     'content-type': 'application/json',
+415 silly get     'transfer-encoding': 'chunked',
+415 silly get     connection: 'close',
+415 silly get     'cf-ray': '860b67b2f86fb3bb-MIA',
+415 silly get     'cf-cache-status': 'REVALIDATED',
+415 silly get     'access-control-allow-origin': '*',
+415 silly get     'cache-control': 'public, max-age=300',
+415 silly get     etag: 'W/"f4f9685dcf344f07137f30e42f6274a7"',
+415 silly get     'last-modified': 'Fri, 19 Jan 2024 09:26:02 GMT',
+415 silly get     vary: 'accept-encoding, accept',
+415 silly get     server: 'cloudflare',
+415 silly get     'content-encoding': 'gzip' } ]
+416 verbose get saving node-emoji to /Users/laurenceadams/.npm/registry.npmjs.org/node-emoji/.cache.json
+417 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+418 verbose get http://registry.npmjs.org/typescript not expired, no request
+419 http 200 http://registry.npmjs.org/tsconfig-paths-webpack-plugin
+420 verbose headers { date: 'Thu, 07 Mar 2024 14:51:42 GMT',
+420 verbose headers   'content-type': 'application/json',
+420 verbose headers   'transfer-encoding': 'chunked',
+420 verbose headers   connection: 'close',
+420 verbose headers   'cf-ray': '860b67b2faf0b3cd-MIA',
+420 verbose headers   'cf-cache-status': 'REVALIDATED',
+420 verbose headers   'access-control-allow-origin': '*',
+420 verbose headers   'cache-control': 'public, max-age=300',
+420 verbose headers   etag: 'W/"134be101e2729cccf1244ccc477bffae"',
+420 verbose headers   'last-modified': 'Tue, 11 Jul 2023 18:47:28 GMT',
+420 verbose headers   vary: 'accept-encoding, accept',
+420 verbose headers   server: 'cloudflare',
+420 verbose headers   'content-encoding': 'gzip' }
+421 silly get cb [ 200,
+421 silly get   { date: 'Thu, 07 Mar 2024 14:51:42 GMT',
+421 silly get     'content-type': 'application/json',
+421 silly get     'transfer-encoding': 'chunked',
+421 silly get     connection: 'close',
+421 silly get     'cf-ray': '860b67b2faf0b3cd-MIA',
+421 silly get     'cf-cache-status': 'REVALIDATED',
+421 silly get     'access-control-allow-origin': '*',
+421 silly get     'cache-control': 'public, max-age=300',
+421 silly get     etag: 'W/"134be101e2729cccf1244ccc477bffae"',
+421 silly get     'last-modified': 'Tue, 11 Jul 2023 18:47:28 GMT',
+421 silly get     vary: 'accept-encoding, accept',
+421 silly get     server: 'cloudflare',
+421 silly get     'content-encoding': 'gzip' } ]
+422 verbose get saving tsconfig-paths-webpack-plugin to /Users/laurenceadams/.npm/registry.npmjs.org/tsconfig-paths-webpack-plugin/.cache.json
+423 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+424 silly mapToRegistry name typescript
+425 silly mapToRegistry using default registry
+426 silly mapToRegistry registry http://registry.npmjs.org/
+427 silly mapToRegistry data Result {
+427 silly mapToRegistry   raw: 'typescript',
+427 silly mapToRegistry   scope: null,
+427 silly mapToRegistry   name: 'typescript',
+427 silly mapToRegistry   rawSpec: '',
+427 silly mapToRegistry   spec: 'latest',
+427 silly mapToRegistry   type: 'tag' }
+428 silly mapToRegistry uri http://registry.npmjs.org/typescript
+429 verbose addRemoteTarball http://registry.npmjs.org/typescript/-/typescript-5.3.3.tgz not in flight; adding
+430 verbose addRemoteTarball [ 'http://registry.npmjs.org/typescript/-/typescript-5.3.3.tgz',
+430 verbose addRemoteTarball   'b3ce6ba258e72e6305ba66f5c9b452aaee3ffe37' ]
+431 http 200 http://registry.npmjs.org/chokidar
+432 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+432 verbose headers   'content-type': 'application/json',
+432 verbose headers   'transfer-encoding': 'chunked',
+432 verbose headers   connection: 'close',
+432 verbose headers   'cf-ray': '860b67b2f98531ec-MIA',
+432 verbose headers   'cf-cache-status': 'HIT',
+432 verbose headers   'access-control-allow-origin': '*',
+432 verbose headers   age: '218',
+432 verbose headers   'cache-control': 'public, max-age=300',
+432 verbose headers   etag: 'W/"8c4db2f02db1f88811d1e490c6ead318"',
+432 verbose headers   'last-modified': 'Tue, 06 Feb 2024 22:57:37 GMT',
+432 verbose headers   vary: 'accept-encoding, accept',
+432 verbose headers   server: 'cloudflare',
+432 verbose headers   'content-encoding': 'gzip' }
+433 silly get cb [ 200,
+433 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+433 silly get     'content-type': 'application/json',
+433 silly get     'transfer-encoding': 'chunked',
+433 silly get     connection: 'close',
+433 silly get     'cf-ray': '860b67b2f98531ec-MIA',
+433 silly get     'cf-cache-status': 'HIT',
+433 silly get     'access-control-allow-origin': '*',
+433 silly get     age: '218',
+433 silly get     'cache-control': 'public, max-age=300',
+433 silly get     etag: 'W/"8c4db2f02db1f88811d1e490c6ead318"',
+433 silly get     'last-modified': 'Tue, 06 Feb 2024 22:57:37 GMT',
+433 silly get     vary: 'accept-encoding, accept',
+433 silly get     server: 'cloudflare',
+433 silly get     'content-encoding': 'gzip' } ]
+434 verbose get saving chokidar to /Users/laurenceadams/.npm/registry.npmjs.org/chokidar/.cache.json
+435 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+436 http 200 http://registry.npmjs.org/shelljs
+437 verbose headers { date: 'Thu, 07 Mar 2024 14:51:42 GMT',
+437 verbose headers   'content-type': 'application/json',
+437 verbose headers   'transfer-encoding': 'chunked',
+437 verbose headers   connection: 'close',
+437 verbose headers   'cf-ray': '860b67b2fb703dd3-MIA',
+437 verbose headers   'cf-cache-status': 'REVALIDATED',
+437 verbose headers   'access-control-allow-origin': '*',
+437 verbose headers   'cache-control': 'public, max-age=300',
+437 verbose headers   etag: 'W/"d084a8a2e25f75f7ab0407e1f437984d"',
+437 verbose headers   'last-modified': 'Sun, 02 Apr 2023 12:18:19 GMT',
+437 verbose headers   vary: 'accept-encoding, accept',
+437 verbose headers   server: 'cloudflare',
+437 verbose headers   'content-encoding': 'gzip' }
+438 silly get cb [ 200,
+438 silly get   { date: 'Thu, 07 Mar 2024 14:51:42 GMT',
+438 silly get     'content-type': 'application/json',
+438 silly get     'transfer-encoding': 'chunked',
+438 silly get     connection: 'close',
+438 silly get     'cf-ray': '860b67b2fb703dd3-MIA',
+438 silly get     'cf-cache-status': 'REVALIDATED',
+438 silly get     'access-control-allow-origin': '*',
+438 silly get     'cache-control': 'public, max-age=300',
+438 silly get     etag: 'W/"d084a8a2e25f75f7ab0407e1f437984d"',
+438 silly get     'last-modified': 'Sun, 02 Apr 2023 12:18:19 GMT',
+438 silly get     vary: 'accept-encoding, accept',
+438 silly get     server: 'cloudflare',
+438 silly get     'content-encoding': 'gzip' } ]
+439 verbose get saving shelljs to /Users/laurenceadams/.npm/registry.npmjs.org/shelljs/.cache.json
+440 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+441 silly cache afterAdd chalk@4.1.2
+442 verbose afterAdd /Users/laurenceadams/.npm/chalk/4.1.2/package/package.json not in flight; writing
+443 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+444 verbose get http://registry.npmjs.org/tree-kill not expired, no request
+445 verbose get http://registry.npmjs.org/webpack-node-externals not expired, no request
+446 verbose get http://registry.npmjs.org/cli-table3 not expired, no request
+447 info retry fetch attempt 1 at 9:51:42 AM
+448 info attempt registry request try #1 at 9:51:42 AM
+449 http fetch GET http://registry.npmjs.org/typescript/-/typescript-5.3.3.tgz
+450 silly resolveWithNewModule source-map-support@0.5.21 checking installable status
+451 silly cache add args [ 'source-map-support@0.5.21', null ]
+452 verbose cache add spec source-map-support@0.5.21
+453 silly cache add parsed spec Result {
+453 silly cache add   raw: 'source-map-support@0.5.21',
+453 silly cache add   scope: null,
+453 silly cache add   name: 'source-map-support',
+453 silly cache add   rawSpec: '0.5.21',
+453 silly cache add   spec: '0.5.21',
+453 silly cache add   type: 'version' }
+454 silly addNamed source-map-support@0.5.21
+455 verbose addNamed "0.5.21" is a plain semver version for source-map-support
+456 silly mapToRegistry name source-map-support
+457 silly mapToRegistry using default registry
+458 silly mapToRegistry registry http://registry.npmjs.org/
+459 silly mapToRegistry data Result {
+459 silly mapToRegistry   raw: 'source-map-support',
+459 silly mapToRegistry   scope: null,
+459 silly mapToRegistry   name: 'source-map-support',
+459 silly mapToRegistry   rawSpec: '',
+459 silly mapToRegistry   spec: 'latest',
+459 silly mapToRegistry   type: 'tag' }
+460 silly mapToRegistry uri http://registry.npmjs.org/source-map-support
+461 verbose addNameVersion registry:http://registry.npmjs.org/source-map-support not in flight; fetching
+462 silly resolveWithNewModule ora@5.4.1 checking installable status
+463 silly cache add args [ 'ora@5.4.1', null ]
+464 verbose cache add spec ora@5.4.1
+465 silly cache add parsed spec Result {
+465 silly cache add   raw: 'ora@5.4.1',
+465 silly cache add   scope: null,
+465 silly cache add   name: 'ora',
+465 silly cache add   rawSpec: '5.4.1',
+465 silly cache add   spec: '5.4.1',
+465 silly cache add   type: 'version' }
+466 silly addNamed ora@5.4.1
+467 verbose addNamed "5.4.1" is a plain semver version for ora
+468 silly mapToRegistry name ora
+469 silly mapToRegistry using default registry
+470 silly mapToRegistry registry http://registry.npmjs.org/
+471 silly mapToRegistry data Result {
+471 silly mapToRegistry   raw: 'ora',
+471 silly mapToRegistry   scope: null,
+471 silly mapToRegistry   name: 'ora',
+471 silly mapToRegistry   rawSpec: '',
+471 silly mapToRegistry   spec: 'latest',
+471 silly mapToRegistry   type: 'tag' }
+472 silly mapToRegistry uri http://registry.npmjs.org/ora
+473 verbose addNameVersion registry:http://registry.npmjs.org/ora not in flight; fetching
+474 silly mapToRegistry name tree-kill
+475 silly mapToRegistry using default registry
+476 silly mapToRegistry registry http://registry.npmjs.org/
+477 silly mapToRegistry data Result {
+477 silly mapToRegistry   raw: 'tree-kill',
+477 silly mapToRegistry   scope: null,
+477 silly mapToRegistry   name: 'tree-kill',
+477 silly mapToRegistry   rawSpec: '',
+477 silly mapToRegistry   spec: 'latest',
+477 silly mapToRegistry   type: 'tag' }
+478 silly mapToRegistry uri http://registry.npmjs.org/tree-kill
+479 verbose addRemoteTarball http://registry.npmjs.org/tree-kill/-/tree-kill-1.2.2.tgz not in flight; adding
+480 verbose addRemoteTarball [ 'http://registry.npmjs.org/tree-kill/-/tree-kill-1.2.2.tgz',
+480 verbose addRemoteTarball   '4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc' ]
+481 silly mapToRegistry name webpack-node-externals
+482 silly mapToRegistry using default registry
+483 silly mapToRegistry registry http://registry.npmjs.org/
+484 silly mapToRegistry data Result {
+484 silly mapToRegistry   raw: 'webpack-node-externals',
+484 silly mapToRegistry   scope: null,
+484 silly mapToRegistry   name: 'webpack-node-externals',
+484 silly mapToRegistry   rawSpec: '',
+484 silly mapToRegistry   spec: 'latest',
+484 silly mapToRegistry   type: 'tag' }
+485 silly mapToRegistry uri http://registry.npmjs.org/webpack-node-externals
+486 verbose addRemoteTarball http://registry.npmjs.org/webpack-node-externals/-/webpack-node-externals-3.0.0.tgz not in flight; adding
+487 verbose addRemoteTarball [ 'http://registry.npmjs.org/webpack-node-externals/-/webpack-node-externals-3.0.0.tgz',
+487 verbose addRemoteTarball   '1a3407c158d547a9feb4229a9e3385b7b60c9917' ]
+488 silly mapToRegistry name cli-table3
+489 silly mapToRegistry using default registry
+490 silly mapToRegistry registry http://registry.npmjs.org/
+491 silly mapToRegistry data Result {
+491 silly mapToRegistry   raw: 'cli-table3',
+491 silly mapToRegistry   scope: null,
+491 silly mapToRegistry   name: 'cli-table3',
+491 silly mapToRegistry   rawSpec: '',
+491 silly mapToRegistry   spec: 'latest',
+491 silly mapToRegistry   type: 'tag' }
+492 silly mapToRegistry uri http://registry.npmjs.org/cli-table3
+493 verbose addRemoteTarball http://registry.npmjs.org/cli-table3/-/cli-table3-0.6.3.tgz not in flight; adding
+494 verbose addRemoteTarball [ 'http://registry.npmjs.org/cli-table3/-/cli-table3-0.6.3.tgz',
+494 verbose addRemoteTarball   '61ab765aac156b52f222954ffc607a6f01dbeeb2' ]
+495 http 200 http://registry.npmjs.org/tsconfig-paths
+496 verbose headers { date: 'Thu, 07 Mar 2024 14:51:42 GMT',
+496 verbose headers   'content-type': 'application/json',
+496 verbose headers   'transfer-encoding': 'chunked',
+496 verbose headers   connection: 'close',
+496 verbose headers   'cf-ray': '860b67b2fb375c7c-MIA',
+496 verbose headers   'cf-cache-status': 'REVALIDATED',
+496 verbose headers   'access-control-allow-origin': '*',
+496 verbose headers   'cache-control': 'public, max-age=300',
+496 verbose headers   etag: 'W/"8e8b31d3a680d777fbe5ffc55e4c7cfb"',
+496 verbose headers   'last-modified': 'Fri, 15 Dec 2023 06:34:45 GMT',
+496 verbose headers   vary: 'accept-encoding, accept',
+496 verbose headers   server: 'cloudflare',
+496 verbose headers   'content-encoding': 'gzip' }
+497 silly get cb [ 200,
+497 silly get   { date: 'Thu, 07 Mar 2024 14:51:42 GMT',
+497 silly get     'content-type': 'application/json',
+497 silly get     'transfer-encoding': 'chunked',
+497 silly get     connection: 'close',
+497 silly get     'cf-ray': '860b67b2fb375c7c-MIA',
+497 silly get     'cf-cache-status': 'REVALIDATED',
+497 silly get     'access-control-allow-origin': '*',
+497 silly get     'cache-control': 'public, max-age=300',
+497 silly get     etag: 'W/"8e8b31d3a680d777fbe5ffc55e4c7cfb"',
+497 silly get     'last-modified': 'Fri, 15 Dec 2023 06:34:45 GMT',
+497 silly get     vary: 'accept-encoding, accept',
+497 silly get     server: 'cloudflare',
+497 silly get     'content-encoding': 'gzip' } ]
+498 verbose get saving tsconfig-paths to /Users/laurenceadams/.npm/registry.npmjs.org/tsconfig-paths/.cache.json
+499 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+500 silly resolveWithNewModule rimraf@4.4.1 checking installable status
+501 silly cache add args [ 'rimraf@4.4.1', null ]
+502 verbose cache add spec rimraf@4.4.1
+503 silly cache add parsed spec Result {
+503 silly cache add   raw: 'rimraf@4.4.1',
+503 silly cache add   scope: null,
+503 silly cache add   name: 'rimraf',
+503 silly cache add   rawSpec: '4.4.1',
+503 silly cache add   spec: '4.4.1',
+503 silly cache add   type: 'version' }
+504 silly addNamed rimraf@4.4.1
+505 verbose addNamed "4.4.1" is a plain semver version for rimraf
+506 silly mapToRegistry name rimraf
+507 silly mapToRegistry using default registry
+508 silly mapToRegistry registry http://registry.npmjs.org/
+509 silly mapToRegistry data Result {
+509 silly mapToRegistry   raw: 'rimraf',
+509 silly mapToRegistry   scope: null,
+509 silly mapToRegistry   name: 'rimraf',
+509 silly mapToRegistry   rawSpec: '',
+509 silly mapToRegistry   spec: 'latest',
+509 silly mapToRegistry   type: 'tag' }
+510 silly mapToRegistry uri http://registry.npmjs.org/rimraf
+511 verbose addNameVersion registry:http://registry.npmjs.org/rimraf not in flight; fetching
+512 info retry fetch attempt 1 at 9:51:42 AM
+513 info attempt registry request try #1 at 9:51:42 AM
+514 http fetch GET http://registry.npmjs.org/tree-kill/-/tree-kill-1.2.2.tgz
+515 info retry fetch attempt 1 at 9:51:42 AM
+516 info attempt registry request try #1 at 9:51:42 AM
+517 http fetch GET http://registry.npmjs.org/webpack-node-externals/-/webpack-node-externals-3.0.0.tgz
+518 info retry fetch attempt 1 at 9:51:42 AM
+519 info attempt registry request try #1 at 9:51:42 AM
+520 http fetch GET http://registry.npmjs.org/cli-table3/-/cli-table3-0.6.3.tgz
+521 verbose afterAdd /Users/laurenceadams/.npm/chalk/4.1.2/package/package.json written
+522 http 200 http://registry.npmjs.org/glob
+523 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+523 verbose headers   'content-type': 'application/json',
+523 verbose headers   'transfer-encoding': 'chunked',
+523 verbose headers   connection: 'close',
+523 verbose headers   'cf-ray': '860b67b2fe7b4c08-MIA',
+523 verbose headers   'cf-cache-status': 'HIT',
+523 verbose headers   'access-control-allow-origin': '*',
+523 verbose headers   age: '254',
+523 verbose headers   'cache-control': 'public, max-age=300',
+523 verbose headers   etag: 'W/"e885fde2f5ef432c085b3724db767354"',
+523 verbose headers   'last-modified': 'Sun, 17 Dec 2023 06:25:31 GMT',
+523 verbose headers   vary: 'accept-encoding, accept',
+523 verbose headers   server: 'cloudflare',
+523 verbose headers   'content-encoding': 'gzip' }
+524 silly get cb [ 200,
+524 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+524 silly get     'content-type': 'application/json',
+524 silly get     'transfer-encoding': 'chunked',
+524 silly get     connection: 'close',
+524 silly get     'cf-ray': '860b67b2fe7b4c08-MIA',
+524 silly get     'cf-cache-status': 'HIT',
+524 silly get     'access-control-allow-origin': '*',
+524 silly get     age: '254',
+524 silly get     'cache-control': 'public, max-age=300',
+524 silly get     etag: 'W/"e885fde2f5ef432c085b3724db767354"',
+524 silly get     'last-modified': 'Sun, 17 Dec 2023 06:25:31 GMT',
+524 silly get     vary: 'accept-encoding, accept',
+524 silly get     server: 'cloudflare',
+524 silly get     'content-encoding': 'gzip' } ]
+525 verbose get saving glob to /Users/laurenceadams/.npm/registry.npmjs.org/glob/.cache.json
+526 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+527 verbose get http://registry.npmjs.org/source-map-support not expired, no request
+528 http 200 http://registry.npmjs.org/inquirer
+529 verbose headers { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+529 verbose headers   'content-type': 'application/json',
+529 verbose headers   'transfer-encoding': 'chunked',
+529 verbose headers   connection: 'close',
+529 verbose headers   'cf-ray': '860b67b2f8e18758-MIA',
+529 verbose headers   'cf-cache-status': 'HIT',
+529 verbose headers   'access-control-allow-origin': '*',
+529 verbose headers   age: '102',
+529 verbose headers   'cache-control': 'public, max-age=300',
+529 verbose headers   etag: 'W/"2b22607db431d27498799b50ad58e00b"',
+529 verbose headers   'last-modified': 'Mon, 19 Feb 2024 16:30:07 GMT',
+529 verbose headers   vary: 'accept-encoding, accept',
+529 verbose headers   server: 'cloudflare',
+529 verbose headers   'content-encoding': 'gzip' }
+530 silly get cb [ 200,
+530 silly get   { date: 'Thu, 07 Mar 2024 14:51:41 GMT',
+530 silly get     'content-type': 'application/json',
+530 silly get     'transfer-encoding': 'chunked',
+530 silly get     connection: 'close',
+530 silly get     'cf-ray': '860b67b2f8e18758-MIA',
+530 silly get     'cf-cache-status': 'HIT',
+530 silly get     'access-control-allow-origin': '*',
+530 silly get     age: '102',
+530 silly get     'cache-control': 'public, max-age=300',
+530 silly get     etag: 'W/"2b22607db431d27498799b50ad58e00b"',
+530 silly get     'last-modified': 'Mon, 19 Feb 2024 16:30:07 GMT',
+530 silly get     vary: 'accept-encoding, accept',
+530 silly get     server: 'cloudflare',
+530 silly get     'content-encoding': 'gzip' } ]
+531 verbose get saving inquirer to /Users/laurenceadams/.npm/registry.npmjs.org/inquirer/.cache.json
+532 verbose correctMkdir /Users/laurenceadams/.npm correctMkdir not in flight; initializing
+533 verbose get http://registry.npmjs.org/ora not expired, no request
+534 silly resolveWithNewModule node-emoji@1.11.0 checking installable status
+535 silly cache add args [ 'node-emoji@1.11.0', null ]
+536 verbose cache add spec node-emoji@1.11.0
+537 silly cache add parsed spec Result {
+537 silly cache add   raw: 'node-emoji@1.11.0',
+537 silly cache add   scope: null,
+537 silly cache add   name: 'node-emoji',
+537 silly cache add   rawSpec: '1.11.0',
+537 silly cache add   spec: '1.11.0',
+537 silly cache add   type: 'version' }
+538 silly addNamed node-emoji@1.11.0
+539 verbose addNamed "1.11.0" is a plain semver version for node-emoji
+540 silly mapToRegistry name node-emoji
+541 silly mapToRegistry using default registry
+542 silly mapToRegistry registry http://registry.npmjs.org/
+543 silly mapToRegistry data Result {
+543 silly mapToRegistry   raw: 'node-emoji',
+543 silly mapToRegistry   scope: null,
+543 silly mapToRegistry   name: 'node-emoji',
+543 silly mapToRegistry   rawSpec: '',
+543 silly mapToRegistry   spec: 'latest',
+543 silly mapToRegistry   type: 'tag' }
+544 silly mapToRegistry uri http://registry.npmjs.org/node-emoji
+545 verbose addNameVersion registry:http://registry.npmjs.org/node-emoji not in flight; fetching
+546 silly mapToRegistry name source-map-support
+547 silly mapToRegistry using default registry
+548 silly mapToRegistry registry http://registry.npmjs.org/
+549 silly mapToRegistry data Result {
+549 silly mapToRegistry   raw: 'source-map-support',
+549 silly mapToRegistry   scope: null,
+549 silly mapToRegistry   name: 'source-map-support',
+549 silly mapToRegistry   rawSpec: '',
+549 silly mapToRegistry   spec: 'latest',
+549 silly mapToRegistry   type: 'tag' }
+550 silly mapToRegistry uri http://registry.npmjs.org/source-map-support
+551 verbose addRemoteTarball http://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz not in flight; adding
+552 verbose addRemoteTarball [ 'http://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz',
+552 verbose addRemoteTarball   '04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f' ]
+553 silly resolveWithNewModule tsconfig-paths-webpack-plugin@4.1.0 checking installable status
+554 silly cache add args [ 'tsconfig-paths-webpack-plugin@4.1.0', null ]
+555 verbose cache add spec tsconfig-paths-webpack-plugin@4.1.0
+556 silly cache add parsed spec Result {
+556 silly cache add   raw: 'tsconfig-paths-webpack-plugin@4.1.0',
+556 silly cache add   scope: null,
+556 silly cache add   name: 'tsconfig-paths-webpack-plugin',
+556 silly cache add   rawSpec: '4.1.0',
+556 silly cache add   spec: '4.1.0',
+556 silly cache add   type: 'version' }
+557 silly addNamed tsconfig-paths-webpack-plugin@4.1.0
+558 verbose addNamed "4.1.0" is a plain semver version for tsconfig-paths-webpack-plugin
+559 silly mapToRegistry name tsconfig-paths-webpack-plugin
+560 silly mapToRegistry using default registry
+561 silly mapToRegistry registry http://registry.npmjs.org/
+562 silly mapToRegistry data Result {
+562 silly mapToRegistry   raw: 'tsconfig-paths-webpack-plugin',
+562 silly mapToRegistry   scope: null,
+562 silly mapToRegistry   name: 'tsconfig-paths-webpack-plugin',
+562 silly mapToRegistry   rawSpec: '',
+562 silly mapToRegistry   spec: 'latest',
+562 silly mapToRegistry   type: 'tag' }
+563 silly mapToRegistry uri http://registry.npmjs.org/tsconfig-paths-webpack-plugin
+564 verbose addNameVersion registry:http://registry.npmjs.org/tsconfig-paths-webpack-plugin not in flight; fetching
+565 silly mapToRegistry name ora
+566 silly mapToRegistry using default registry
+567 silly mapToRegistry registry http://registry.npmjs.org/
+568 silly mapToRegistry data Result {
+568 silly mapToRegistry   raw: 'ora',
+568 silly mapToRegistry   scope: null,
+568 silly mapToRegistry   name: 'ora',
+568 silly mapToRegistry   rawSpec: '',
+568 silly mapToRegistry   spec: 'latest',
+568 silly mapToRegistry   type: 'tag' }
+569 silly mapToRegistry uri http://registry.npmjs.org/ora
+570 verbose addRemoteTarball http://registry.npmjs.org/ora/-/ora-5.4.1.tgz not in flight; adding
+571 verbose addRemoteTarball [ 'http://registry.npmjs.org/ora/-/ora-5.4.1.tgz',
+571 verbose addRemoteTarball   '1b2678426af4ac4a509008e5e4ac9e9959db9e18' ]
+572 silly resolveWithNewModule shelljs@0.8.5 checking installable status
+573 silly cache add args [ 'shelljs@0.8.5', null ]
+574 verbose cache add spec shelljs@0.8.5
+575 silly cache add parsed spec Result {
+575 silly cache add   raw: 'shelljs@0.8.5',
+575 silly cache add   scope: null,
+575 silly cache add   name: 'shelljs',
+575 silly cache add   rawSpec: '0.8.5',
+575 silly cache add   spec: '0.8.5',
+575 silly cache add   type: 'version' }
+576 silly addNamed shelljs@0.8.5
+577 verbose addNamed "0.8.5" is a plain semver version for shelljs
+578 silly mapToRegistry name shelljs
+579 silly mapToRegistry using default registry
+580 silly mapToRegistry registry http://registry.npmjs.org/
+581 silly mapToRegistry data Result {
+581 silly mapToRegistry   raw: 'shelljs',
+581 silly mapToRegistry   scope: null,
+581 silly mapToRegistry   name: 'shelljs',
+581 silly mapToRegistry   rawSpec: '',
+581 silly mapToRegistry   spec: 'latest',
+581 silly mapToRegistry   type: 'tag' }
+582 silly mapToRegistry uri http://registry.npmjs.org/shelljs
+583 verbose addNameVersion registry:http://registry.npmjs.org/shelljs not in flight; fetching
+584 silly resolveWithNewModule chokidar@3.6.0 checking installable status
+585 silly cache add args [ 'chokidar@3.6.0', null ]
+586 verbose cache add spec chokidar@3.6.0
+587 silly cache add parsed spec Result {
+587 silly cache add   raw: 'chokidar@3.6.0',
+587 silly cache add   scope: null,
+587 silly cache add   name: 'chokidar',
+587 silly cache add   rawSpec: '3.6.0',
+587 silly cache add   spec: '3.6.0',
+587 silly cache add   type: 'version' }
+588 silly addNamed chokidar@3.6.0
+589 verbose addNamed "3.6.0" is a plain semver version for chokidar
+590 silly mapToRegistry name chokidar
+591 silly mapToRegistry using default registry
+592 silly mapToRegistry registry http://registry.npmjs.org/
+593 silly mapToRegistry data Result {
+593 silly mapToRegistry   raw: 'chokidar',
+593 silly mapToRegistry   scope: null,
+593 silly mapToRegistry   name: 'chokidar',
+593 silly mapToRegistry   rawSpec: '',
+593 silly mapToRegistry   spec: 'latest',
+593 silly mapToRegistry   type: 'tag' }
+594 silly mapToRegistry uri http://registry.npmjs.org/chokidar
+595 verbose addNameVersion registry:http://registry.npmjs.org/chokidar not in flight; fetching
+596 verbose get http://registry.npmjs.org/rimraf not expired, no request
+597 silly mapToRegistry name rimraf
+598 silly mapToRegistry using default registry
+599 silly mapToRegistry registry http://registry.npmjs.org/
+600 silly mapToRegistry data Result {
+600 silly mapToRegistry   raw: 'rimraf',
+600 silly mapToRegistry   scope: null,
+600 silly mapToRegistry   name: 'rimraf',
+600 silly mapToRegistry   rawSpec: '',
+600 silly mapToRegistry   spec: 'latest',
+600 silly mapToRegistry   type: 'tag' }
+601 silly mapToRegistry uri http://registry.npmjs.org/rimraf
+602 verbose addRemoteTarball http://registry.npmjs.org/rimraf/-/rimraf-4.4.1.tgz not in flight; adding
+603 verbose addRemoteTarball [ 'http://registry.npmjs.org/rimraf/-/rimraf-4.4.1.tgz',
+603 verbose addRemoteTarball   'bd33364f67021c5b79e93d7f4fa0568c7c21b755' ]
+604 info retry fetch attempt 1 at 9:51:42 AM
+605 info attempt registry request try #1 at 9:51:42 AM
+606 http fetch GET http://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz
+607 info retry fetch attempt 1 at 9:51:42 AM
+608 info attempt registry request try #1 at 9:51:42 AM
+609 http fetch GET http://registry.npmjs.org/ora/-/ora-5.4.1.tgz
+610 verbose get http://registry.npmjs.org/node-emoji not expired, no request
+611 silly resolveWithNewModule tsconfig-paths@4.2.0 checking installable status
+612 silly cache add args [ 'tsconfig-paths@4.2.0', null ]
+613 verbose cache add spec tsconfig-paths@4.2.0
+614 silly cache add parsed spec Result {
+614 silly cache add   raw: 'tsconfig-paths@4.2.0',
+614 silly cache add   scope: null,
+614 silly cache add   name: 'tsconfig-paths',
+614 silly cache add   rawSpec: '4.2.0',
+614 silly cache add   spec: '4.2.0',
+614 silly cache add   type: 'version' }
+615 silly addNamed tsconfig-paths@4.2.0
+616 verbose addNamed "4.2.0" is a plain semver version for tsconfig-paths
+617 silly mapToRegistry name tsconfig-paths
+618 silly mapToRegistry using default registry
+619 silly mapToRegistry registry http://registry.npmjs.org/
+620 silly mapToRegistry data Result {
+620 silly mapToRegistry   raw: 'tsconfig-paths',
+620 silly mapToRegistry   scope: null,
+620 silly mapToRegistry   name: 'tsconfig-paths',
+620 silly mapToRegistry   rawSpec: '',
+620 silly mapToRegistry   spec: 'latest',
+620 silly mapToRegistry   type: 'tag' }
+621 silly mapToRegistry uri http://registry.npmjs.org/tsconfig-paths
+622 verbose addNameVersion registry:http://registry.npmjs.org/tsconfig-paths not in flight; fetching
+623 silly mapToRegistry name node-emoji
+624 silly mapToRegistry using default registry
+625 silly mapToRegistry registry http://registry.npmjs.org/
+626 silly mapToRegistry data Result {
+626 silly mapToRegistry   raw: 'node-emoji',
+626 silly mapToRegistry   scope: null,
+626 silly mapToRegistry   name: 'node-emoji',
+626 silly mapToRegistry   rawSpec: '',
+626 silly mapToRegistry   spec: 'latest',
+626 silly mapToRegistry   type: 'tag' }
+627 silly mapToRegistry uri http://registry.npmjs.org/node-emoji
+628 verbose addRemoteTarball http://registry.npmjs.org/node-emoji/-/node-emoji-1.11.0.tgz not in flight; adding
+629 verbose addRemoteTarball [ 'http://registry.npmjs.org/node-emoji/-/node-emoji-1.11.0.tgz',
+629 verbose addRemoteTarball   '69a0150e6946e2f115e9d7ea4df7971e2628301c' ]
+630 verbose get http://registry.npmjs.org/tsconfig-paths-webpack-plugin not expired, no request
+631 info retry fetch attempt 1 at 9:51:42 AM
+632 info attempt registry request try #1 at 9:51:42 AM
+633 http fetch GET http://registry.npmjs.org/rimraf/-/rimraf-4.4.1.tgz
+634 verbose get http://registry.npmjs.org/shelljs not expired, no request
+635 silly mapToRegistry name tsconfig-paths-webpack-plugin
+636 silly mapToRegistry using default registry
+637 silly mapToRegistry registry http://registry.npmjs.org/
+638 silly mapToRegistry data Result {
+638 silly mapToRegistry   raw: 'tsconfig-paths-webpack-plugin',
+638 silly mapToRegistry   scope: null,
+638 silly mapToRegistry   name: 'tsconfig-paths-webpack-plugin',
+638 silly mapToRegistry   rawSpec: '',
+638 silly mapToRegistry   spec: 'latest',
+638 silly mapToRegistry   type: 'tag' }
+639 silly mapToRegistry uri http://registry.npmjs.org/tsconfig-paths-webpack-plugin
+640 verbose addRemoteTarball http://registry.npmjs.org/tsconfig-paths-webpack-plugin/-/tsconfig-paths-webpack-plugin-4.1.0.tgz not in flight; adding
+641 verbose addRemoteTarball [ 'http://registry.npmjs.org/tsconfig-paths-webpack-plugin/-/tsconfig-paths-webpack-plugin-4.1.0.tgz',
+641 verbose addRemoteTarball   '3c6892c5e7319c146eee1e7302ed9e6f2be4f763' ]
+642 verbose get http://registry.npmjs.org/chokidar not expired, no request
+643 silly mapToRegistry name shelljs
+644 silly mapToRegistry using default registry
+645 silly mapToRegistry registry http://registry.npmjs.org/
+646 silly mapToRegistry data Result {
+646 silly mapToRegistry   raw: 'shelljs',
+646 silly mapToRegistry   scope: null,
+646 silly mapToRegistry   name: 'shelljs',
+646 silly mapToRegistry   rawSpec: '',
+646 silly mapToRegistry   spec: 'latest',
+646 silly mapToRegistry   type: 'tag' }
+647 silly mapToRegistry uri http://registry.npmjs.org/shelljs
+648 verbose addRemoteTarball http://registry.npmjs.org/shelljs/-/shelljs-0.8.5.tgz not in flight; adding
+649 verbose addRemoteTarball [ 'http://registry.npmjs.org/shelljs/-/shelljs-0.8.5.tgz',
+649 verbose addRemoteTarball   'de055408d8361bed66c669d2f000538ced8ee20c' ]
+650 silly mapToRegistry name chokidar
+651 silly mapToRegistry using default registry
+652 silly mapToRegistry registry http://registry.npmjs.org/
+653 silly mapToRegistry data Result {
+653 silly mapToRegistry   raw: 'chokidar',
+653 silly mapToRegistry   scope: null,
+653 silly mapToRegistry   name: 'chokidar',
+653 silly mapToRegistry   rawSpec: '',
+653 silly mapToRegistry   spec: 'latest',
+653 silly mapToRegistry   type: 'tag' }
+654 silly mapToRegistry uri http://registry.npmjs.org/chokidar
+655 verbose addRemoteTarball http://registry.npmjs.org/chokidar/-/chokidar-3.6.0.tgz not in flight; adding
+656 verbose addRemoteTarball [ 'http://registry.npmjs.org/chokidar/-/chokidar-3.6.0.tgz',
+656 verbose addRemoteTarball   '197c6cc669ef2a8dc5e7b4d97ee4e092c3eb0d5b' ]
+657 verbose stack Error: Missing required argument #1
+657 verbose stack     at andLogAndFinish (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:31:3)
+657 verbose stack     at fetchPackageMetadata (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:51:22)
+657 verbose stack     at resolveWithNewModule (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/install/deps.js:455:12)
+657 verbose stack     at /Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/install/deps.js:456:7
+657 verbose stack     at /Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+657 verbose stack     at /Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:37:12
+657 verbose stack     at addRequestedAndFinish (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:82:5)
+657 verbose stack     at returnAndAddMetadata (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:117:7)
+657 verbose stack     at pickVersionFromRegistryDocument (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:134:20)
+657 verbose stack     at /Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+658 verbose cwd /Users/laurenceadams/programming/ubiquitous-garbanzo
+659 error Darwin 23.2.0
+660 error argv "/Users/laurenceadams/.nvm/versions/node/v5.12.0/bin/node" "/Users/laurenceadams/.nvm/versions/node/v5.12.0/bin/npm" "install" "-g" "@nestjs/cli"
+661 error node v5.12.0
+662 error npm  v3.8.6
+663 error code EMISSINGARG
+664 error typeerror Error: Missing required argument #1
+664 error typeerror     at andLogAndFinish (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:31:3)
+664 error typeerror     at fetchPackageMetadata (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:51:22)
+664 error typeerror     at resolveWithNewModule (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/install/deps.js:455:12)
+664 error typeerror     at /Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/install/deps.js:456:7
+664 error typeerror     at /Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+664 error typeerror     at /Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:37:12
+664 error typeerror     at addRequestedAndFinish (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:82:5)
+664 error typeerror     at returnAndAddMetadata (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:117:7)
+664 error typeerror     at pickVersionFromRegistryDocument (/Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/lib/fetch-package-metadata.js:134:20)
+664 error typeerror     at /Users/laurenceadams/.nvm/versions/node/v5.12.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+665 error typeerror This is an error with npm itself. Please report this error at:
+665 error typeerror     <http://github.com/npm/npm/issues>
+666 verbose exit [ 1, true ]
