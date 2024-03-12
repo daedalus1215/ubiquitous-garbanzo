@@ -7,6 +7,7 @@ import { TypeOrmModule } from "@nestjs/typeorm";
 import { UsersService } from "./users/users.service";
 import { User } from "./users/user.entity";
 import { Report } from "./reports/report.entity";
+import { UsersController } from "./users/users.controller";
 
 @Module({
   imports: [
@@ -19,7 +20,7 @@ import { Report } from "./reports/report.entity";
     UsersModule,
     ReportsModule,
   ],
-  controllers: [AppController],
+  controllers: [AppController, UsersController],
   providers: [AppService, UsersService],
 })
 export class AppModule {}
