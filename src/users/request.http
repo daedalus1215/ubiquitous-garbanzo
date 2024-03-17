@@ -1,16 +1,14 @@
-### Create a new user
+### Sign up a new user
 POST http://localhost:3000/auth/signup
 content-type: application/json
-
 {
     "email":"asdf@asdf.com",
     "password": "asdlfg"
 }
 
-### sign in a user
+### sign in an existing user
 POST http://localhost:3000/auth/signin
 content-type: application/json
-
 {
     "email":"asdf@asdf.com",
     "password": "asdlfg"
@@ -31,7 +29,6 @@ DELETE http://localhost:3000/auth/2
 ### Update a user
 PATCH http://localhost:3000/auth/2
 Content-Type: application/json
-
 {
     "password":"aaaaa"
 }
