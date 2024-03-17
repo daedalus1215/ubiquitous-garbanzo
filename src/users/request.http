@@ -1,6 +1,7 @@
 ### Sign up a new user
 POST http://localhost:3000/auth/signup
 content-type: application/json
+
 {
     "email":"asdf@asdf.com",
     "password": "asdlfg"
@@ -9,10 +10,14 @@ content-type: application/json
 ### sign in an existing user
 POST http://localhost:3000/auth/signin
 content-type: application/json
+
 {
     "email":"asdf@asdf.com",
     "password": "asdlfg"
 }
+
+### Signout the user.
+POST http://localhost:3000/auth/signout
 
 ### Find all users
 GET http://localhost:3000/auth
@@ -23,6 +28,9 @@ GET http://localhost:3000/auth?email=asdf@asdf.com
 ### Retrieve a user given id 
 GET http://localhost:3000/auth/2
 
+### Get currently signed in user.
+GET http://localhost:3000/auth/whoami
+
 ### Delete a user given id 
 DELETE http://localhost:3000/auth/2
 
@@ -32,9 +40,3 @@ Content-Type: application/json
 {
     "password":"aaaaa"
 }
-
-### Set a color
-GET http://localhost:3000/auth/colors/red
-
-### Get the color
-GET http://localhost:3000/auth/colors

@@ -11,6 +11,11 @@ import { AuthService } from './services/auth.service';
 export class UsersController {
     constructor(private userService: UsersService, private authService: AuthService) { }
 
+    @Get('/whoami')
+    whoAmI(@Session() session: any) {
+        return this.userService.findOne(session.userId);
+    }
+
     @Post('/signup')
     async createUser(@Body() body: CreateUserDto, @Session() session: any) {
         const user = await this.authService.signup(body.email, body.password);
@@ -23,6 +28,11 @@ export class UsersController {
         const user = await this.authService.signin(body.email, body.password);
         session.userId = user.id;
         return user;
+    }
+
+    @Post('/signout')
+    async signout(@Session() session: any) {
+        session.userId = null;
     }
 
     @Get('/:id')
