@@ -7,6 +7,15 @@ content-type: application/json
     "password": "asdlfg"
 }
 
+### sign in a user
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email":"asdf@asdf.com",
+    "password": "asdlfg"
+}
+
 ### Find all users
 GET http://localhost:3000/auth
 
