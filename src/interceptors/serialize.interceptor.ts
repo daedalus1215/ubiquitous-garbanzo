@@ -4,7 +4,7 @@ import { Observable, map } from "rxjs";
 import { UserDto } from "src/users/dtos/user.dto";
 
 // any class is acceptable
-interface ClassConstructor {
+export interface ClassConstructor {
     new (...args: any[]): {}
 }
 
