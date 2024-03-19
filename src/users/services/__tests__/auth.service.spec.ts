@@ -54,7 +54,7 @@ describe('AuthService', () => {
             expect(salt).toBeDefined();
             expect(hash).toBeDefined();
         });
-        
+
         it('should throws an error if user signs up with email that is in use', async () => {
             // Arrange
     
@@ -65,6 +65,19 @@ describe('AuthService', () => {
             await expect(target.signup('asdf@asdf.com', 'asdf'))
                 .rejects
                 .toThrow(BadRequestException);
+        });
+    });
+
+    describe('#signin', () => {
+        it('should throw if signin called with an unused email', async () => {
+            // Arrange
+
+            // Act
+
+            // Assert
+            await expect(target.signin('asdf@asdf.com', 'asdf'))
+            .rejects
+            .toThrow(BadRequestException);
         });
     });
 });
