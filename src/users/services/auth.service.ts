@@ -32,7 +32,7 @@ export class AuthService {
     async signin(email: string, password: string) {
         const [user] = await this.userService.find(email);
         if (!user) {
-            throw new NotFoundException('user not found');
+            throw new BadRequestException(`User not found with email: ${email}`);
         }
 
         const [salt, storedHash] = user.password.split('.');
