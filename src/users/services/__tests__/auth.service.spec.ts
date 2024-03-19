@@ -12,9 +12,14 @@ describe('AuthService', () => {
     let fakeUsersService: Partial<UsersService>;
 
     beforeEach(async () => {
+        const users: User[] = [];
         fakeUsersService = {
-            find: () => Promise.resolve([]),
-            create: (email: string, password: string) => Promise.resolve({ id: 1, email, password } as User),
+            find: (email: string) => Promise.resolve(users.filter(user => user.email === email)),
+            create: (email: string, password: string) => {
+                const user = { id: Math.floor(Math.random() * 9999999), email, password } as User;
+                users.push(user);
+                return Promise.resolve(user);
+            },
             update: (id: number, attrs: Partial<User>) => Promise.resolve({ id: 1, ...attrs } as User)
         };
 
@@ -30,24 +35,23 @@ describe('AuthService', () => {
 
         target = module.get(AuthService);
     });
-    describe('exists', () => {
+    describe('#exists', () => {
         it('should create an instance of auth service', async () => {
             // Arrange
-    
+
             // Act
-    
+
             // Assert
             expect(target).toBeDefined();
         });
     });
-    
+
     describe('#signup', () => {
         it('should creates a new user with a salted and hashed password', async () => {
             // Arrange
-    
             // Act
             const actual = await target.signup('asdf@asdf.com', 'asdf');
-    
+
             // Assert
             expect(actual.password).not.toEqual('asdf');
             const [salt, hash] = actual.password.split('.');
@@ -57,10 +61,8 @@ describe('AuthService', () => {
 
         it('should throws an error if user signs up with email that is in use', async () => {
             // Arrange
-    
+            await target.signup('asdf@asdf.com', 'mypassword');
             // Act
-            fakeUsersService.find = () => Promise.resolve([{ id: 1, email: 'a', password: '1' } as User]);
-    
             // Assert
             await expect(target.signup('asdf@asdf.com', 'asdf'))
                 .rejects
@@ -71,13 +73,21 @@ describe('AuthService', () => {
     describe('#signin', () => {
         it('should throw if signin called with an unused email', async () => {
             // Arrange
+            await target.signup('asdf@asdf.com', 'mypassword');
+            // Act & Assert
+            await expect(target.signin('asdf@asd.com', 'asdf'))
+                .rejects
+                .toThrow(BadRequestException);
+        });
 
-            // Act
+        it('throws if an invalid password is provided', async () => {
+            // Arrange
+            await target.signup('asdf@asdf.com', 'mypassword');
 
-            // Assert
-            await expect(target.signin('asdf@asdf.com', 'asdf'))
-            .rejects
-            .toThrow(BadRequestException);
+            // Act & Assert
+            await expect(target.signin('asdf@asdf.com', 'passowrd'))
+                .rejects
+                .toThrow(BadRequestException);
         });
     });
 });
