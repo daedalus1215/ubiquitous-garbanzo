@@ -5,30 +5,40 @@ import { AuthService } from './services/auth.service';
 import { User } from './user.entity';
 
 describe('UsersController', () => {
-  let controller: UsersController;
+  let target: UsersController;
   let fakeUsersService: Partial<UsersService>;
   let fakeAuthService: Partial<AuthService>;
 
   beforeEach(async () => {
     fakeUsersService = {
-      findOne: (id: number) => Promise.resolve({id, email: 'asdf@asdf.com', password: 'mypassword'}) as Promise<User>,
-      find: (email: string) => Promise<User[]>,
-      remove: (id: number) => Promise<User>,
-      update: () => {}
+      findOne: (id: number) => Promise.resolve({ id, email: 'asdf@asdf.com', password: 'mypassword' } as User),
+      find: (email: string) => Promise.resolve([{ id: 1, email, password: 'asdf' } as User]),
+      // remove: (id: number) => Promise<User>,
+      // update: () => {}
     };
     fakeAuthService = {
-      signup: () => {},
-      signin: () => {}
+      // signup: () => {},
+      // signin: () => {}
     };
 
     const module: TestingModule = await Test.createTestingModule({
       controllers: [UsersController],
+      providers: [
+        {
+          provide: UsersService,
+          useValue: fakeUsersService
+        },
+        {
+          provide: AuthService,
+          useValue: fakeAuthService
+        }
+      ]
     }).compile();
 
-    controller = module.get<UsersController>(UsersController);
+    target = module.get<UsersController>(UsersController);
   });
 
   it('should be defined', () => {
-    expect(controller).toBeDefined();
+    expect(target).toBeDefined();
   });
 });
