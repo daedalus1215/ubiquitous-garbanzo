@@ -5,9 +5,7 @@ import { ReportsService } from "./reports.service";
 
 @Controller("reports")
 export class ReportsController {
-    constructor(private reportsService: ReportsService) {
-
-    }
+    constructor(private reportsService: ReportsService) {}
 
     @Post()
     @UseGuards(AuthGuard)

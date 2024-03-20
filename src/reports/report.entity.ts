@@ -21,5 +21,8 @@ export class Report {
   lat: number;
 
   @Column()
+  year: number;
+  
+  @Column()
   mileage: number;
 }
