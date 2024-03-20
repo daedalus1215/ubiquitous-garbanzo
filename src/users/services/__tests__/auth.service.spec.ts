@@ -4,8 +4,6 @@ import { UsersService } from "../users.service";
 import { User } from "src/users/user.entity";
 import { BadRequestException } from "@nestjs/common";
 
-
-
 describe('AuthService', () => {
     // Arrange
     let target: AuthService;
@@ -39,9 +37,7 @@ describe('AuthService', () => {
         it('should create an instance of auth service', async () => {
             // Arrange
 
-            // Act
-
-            // Assert
+            // Act & Assert
             expect(target).toBeDefined();
         });
     });
@@ -62,8 +58,7 @@ describe('AuthService', () => {
         it('should throws an error if user signs up with email that is in use', async () => {
             // Arrange
             await target.signup('asdf@asdf.com', 'mypassword');
-            // Act
-            // Assert
+            // Act & Assert
             await expect(target.signup('asdf@asdf.com', 'asdf'))
                 .rejects
                 .toThrow(BadRequestException);

@@ -2,12 +2,12 @@ import { Body, Controller, Delete, Get, NotFoundException, Param, Patch, Post, Q
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UsersService } from './services/users.service';
 import { UpdateUserDto } from './dtos/update-user.dto';
-import { Serialize } from 'src/interceptors/serialize.interceptor';
 import { UserDto } from './dtos/user.dto';
 import { AuthService } from './services/auth.service';
 import { CurrentUser } from './decorators/current-user.decorator';
 import { User } from './user.entity';
 import { AuthGuard } from 'src/guards/auth.guard';
+import { Serialize } from 'src/interceptors/serialize.interceptor';
 
 @Serialize(UserDto)
 @Controller('auth')
@@ -41,7 +41,7 @@ export class UsersController {
 
     @Get('/:id')
     async findUser(@Param('id') id: string) {
-        const user = await this.userService.findOne(parseInt(id));;
+        const user = await this.userService.findOne(parseInt(id));
         if (!user) {
             throw new NotFoundException('user not found');
         }
