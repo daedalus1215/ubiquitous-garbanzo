@@ -4,7 +4,7 @@ import { Observable, map } from "rxjs";
 
 // any class is acceptable
 export interface ClassConstructor {
-    new (...args: any[]): {}
+    new(...args: any[]): {}
 }
 
 export const Serialize = (dto: ClassConstructor) => {
@@ -17,10 +17,11 @@ export class SerializeInterceptor implements NestInterceptor {
     }
 
     intercept(context: ExecutionContext, next: CallHandler<any>): Observable<any> | Promise<Observable<any>> {
-        return next.handle().pipe(map((data: ClassConstructor) => {
-            return plainToClass(this.dto, data, {
-                excludeExtraneousValues: true
-            });
-        }));
+        return next.handle()
+            .pipe(map((data: ClassConstructor) => {
+                return plainToClass(this.dto, data, {
+                    excludeExtraneousValues: true
+                });
+            }));
     }
 }

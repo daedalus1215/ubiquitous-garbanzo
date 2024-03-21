@@ -4,6 +4,7 @@ import { Repository } from "typeorm";
 import { Injectable } from "@nestjs/common";
 import { Report } from "./report.entity";
 import { User } from "src/users/user.entity";
+import { ApproveReportDto } from "./dtos/approve-report.dto";
 
 @Injectable()
 export class ReportsService {
@@ -15,5 +16,9 @@ export class ReportsService {
         const report = this.repo.create((dto as Report));
         report.user = user;
         return this.repo.save(report);
+    }
+
+    async changeApproval(id: string, approved: boolean) {
+        const report = await this.repo.findOne({ where: { id: parseInt(id) } });
     }
 }
