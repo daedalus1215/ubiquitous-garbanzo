@@ -4,7 +4,6 @@ import { Repository } from "typeorm";
 import { Injectable, NotFoundException } from "@nestjs/common";
 import { Report } from "./report.entity";
 import { User } from "src/users/user.entity";
-import { ApproveReportDto } from "./dtos/approve-report.dto";
 import { GetEstimateDto } from "./dtos/get-estimate.dto";
 
 @Injectable()
@@ -30,6 +29,11 @@ export class ReportsService {
         return this.repo.save(report);
     }
 
+    // /**
+    //  * Get all reports non destructuring
+    //  * @param query 
+    //  * @returns 
+    //  */
     // createEstimate(query: GetEstimateDto) {
     //     return this.repo.createQueryBuilder()
     //         .select("*")
@@ -42,15 +46,40 @@ export class ReportsService {
     //         .getRawMany();
     // }
 
-    createEstimate({ make, lng, lat, year, mileage }: GetEstimateDto) {
+    // /**
+    //  * Get all reports with destructuring
+    //  * @param param0 
+    //  * @returns 
+    //  */
+    // createEstimate({make, lng, lat, year, mileage}: GetEstimateDto) {
+    //     return this.repo.createQueryBuilder()
+    //         .select("*")
+    //         .where("make = :make", { make })
+    //         .andWhere('lng - :lng BETWEEN -5 AND 5', { lng })
+    //         .andWhere('lat - :lat BETWEEN -5 AND 5', { lat })
+    //         .andWhere('year - :year BETWEEN -3 AND 3', { year })
+    //         .orderBy('mileage - :mileage')
+    //         .setParameters({ mileage})
+    //         .getRawMany();
+    // }
+
+    /**
+     * Get the top 3 avg priced vehicle report.
+     * 
+     * @param GetEstimateDto 
+     * @returns Report
+     */
+    createEstimate({make, lng, lat, year, mileage}: GetEstimateDto) {
         return this.repo.createQueryBuilder()
-            .select("*")
+            .select("AVG(price)", 'price')
             .where("make = :make", { make })
             .andWhere('lng - :lng BETWEEN -5 AND 5', { lng })
             .andWhere('lat - :lat BETWEEN -5 AND 5', { lat })
             .andWhere('year - :year BETWEEN -3 AND 3', { year })
-            .orderBy('mileage - :mileage')
-            .setParameters({ mileage })
-            .getRawMany();
+            .andWhere('approved IS TRUE')
+            .orderBy('ABS(mileage - :mileage)', 'DESC')
+            .setParameters({ mileage})
+            .limit(3)
+            .getRawOne();
     }
 }
