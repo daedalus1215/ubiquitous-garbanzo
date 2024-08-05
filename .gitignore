@@ -4,3 +4,7 @@ dist/
 test.md
 .env.*
 build/
+database.sqlite
+tsconfig.build.tsbuildinfo
+tsconfig.tsbuildinfo
+yarn-error.log
