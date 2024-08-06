@@ -1,15 +1,17 @@
 import { Body, Controller, Get, Param, Patch, Post, Query, UseGuards } from "@nestjs/common";
 import { CreateReportDto } from "./dtos/create-report.dto";
 import { AuthGuard } from "src/guards/auth.guard";
-import { ReportsService } from "./reports.service";
 import { CurrentUser } from "src/users/decorators/current-user.decorator";
-import { User } from "src/users/user.entity";
 import { Serialize } from "src/interceptors/serialize.interceptor";
+import { User } from "src/users/user.entity";
+import { AdminGuard } from "src/guards/admin.guard";
+import { ReportsService } from "./reports.service";
 import { ReportDto } from "./dtos/report.dto";
 import { ApproveReportDto } from "./dtos/approve-report.dto";
-import { AdminGuard } from "src/guards/admin.guard";
 import { GetEstimateDto } from "./dtos/get-estimate.dto";
+import { ApiBody, ApiOperation, ApiResponse, ApiTags } from "@nestjs/swagger";
 
+@ApiTags('cats')
 @Controller("reports")
 export class ReportsController {
     constructor(private reportsService: ReportsService) { }
@@ -19,6 +21,10 @@ export class ReportsController {
         return this.reportsService.createEstimate(query);
     }
 
+    @ApiOperation({ summary: 'Add a new report' })
+    @ApiResponse({ status: 200, description: 'Return the created report.' })
+    @ApiResponse({ status: 403, description: 'Forbidden.' })
+    @ApiBody({ type: ReportDto })
     @Post()
     @UseGuards(AuthGuard)
     @Serialize(ReportDto)
